@@ -287,7 +287,7 @@ footer a:hover { color: var(--text); }
     </div>
 
     <div class="coverage-banner">
-      <p><strong>Read this before the data.</strong> Absolute counts in the OBP dataset are floor estimates. Side by side with DOJ's official figures, our matcher captures roughly 15 to 25 percent of the true post-guidance population (v2 broader matcher; v1 was 9 to 13 percent). The directional finding is robust and corroborated by DOJ's own numbers. Within-dataset percentage shifts and time-to-disposition deltas are like-for-like and survive the coverage gap. Treat the absolute pre-DOJ baseline of 20 per year as a floor, not a ceiling.</p>
+      <p><strong>Read this before the data.</strong> All § 523(a)(8) AP counts on this page come from the RECAP archive (CourtListener / Free Law Project), the only free national source for bankruptcy adversary proceedings. <strong>RECAP does not contain every AP</strong>; coverage depends on user uploads, court-watcher tooling, and ongoing scraping. Side by side with DOJ's officially disclosed figures, our matcher captures roughly 15 to 25 percent of the true post-guidance population (v2 broader matcher; v1 was 9 to 13 percent). Treat all absolute counts on this page as floor estimates. The directional findings (the surge, the time-to-disposition compression, the servicer concentration) are robust because they survive the coverage gap on both sides of the comparison and are corroborated by DOJ's own published numbers. Within-dataset percentage shifts and deltas are like-for-like.</p>
     </div>
 
     <h2>Filings by fiscal year, FY 2008 to FY 2026</h2>
@@ -367,10 +367,18 @@ footer a:hover { color: var(--text); }
 
     <h2 id="methodology">Methodology</h2>
 
+    <h3>Where every number on this page comes from</h3>
+    <p>The methodology has three distinct sources doing three distinct jobs:</p>
+    <ol>
+      <li><strong>All § 523(a)(8) AP counts (the actual lawsuits).</strong> RECAP / CourtListener, for the full 2008 through April 27, 2026 window. Both pre-DOJ-guidance and post-DOJ-guidance counts come from the same source applied with the same matcher. FJC's bankruptcy IDB does not contain adversary proceedings at all; RECAP is the only free national source.</li>
+      <li><strong>Absolute count anchors (632 / 1,220).</strong> U.S. Department of Justice press releases, August 2023 and April 2024. These are the only authoritative absolute counts published by anyone, and only for two specific cumulative windows.</li>
+      <li><strong>Macro context numbers (8.4 million bankruptcy filings, pro-se rates by chapter, etc.).</strong> Federal Judicial Center Integrated Database, bankruptcy petition files. FJC publishes petition-level data 2008-present; we use it for system-wide context, not for AP-specific counts.</li>
+    </ol>
+
     <h3>Why OBP's counts differ from DOJ's</h3>
     <p>DOJ has reported 632 APs in the first 10 months post-guidance and 1,220 cumulative through March 2024. OBP's RECAP-derived counts for the same window are roughly 15 to 25 percent of those figures. The gap exists for three documented reasons:</p>
     <ul>
-      <li><strong>RECAP coverage is incomplete.</strong> The Free Law Project archive depends on user uploads, court-watcher tooling, and ongoing scraping. Not every bankruptcy adversary proceeding is mirrored. Coverage is uneven across districts and weakens for older filings; pre-2018 absolute counts are floor estimates.</li>
+      <li><strong>RECAP does not contain every AP.</strong> The Free Law Project archive depends on user uploads, court-watcher tooling, and ongoing scraping. Bankruptcy adversary proceedings that exist in PACER but were never mirrored to RECAP are silently missing from any RECAP-derived dataset, including ours. Coverage is uneven across districts and weakens for older filings; pre-2018 absolute counts are floor estimates.</li>
       <li><strong>Servicer-name and federal captions miss some APs.</strong> The matcher requires the case caption to name a known student loan servicer or include "United States" with a student loan signal term. APs against private servicers not in the matcher list, or APs with unusual captions, are excluded.</li>
       <li><strong>Recent filings have indexing lag.</strong> RECAP receives federal docket data from PACER on a rolling basis. Filings from the past several months are systematically undercounted at any given snapshot. The 2025 and 2026 figures will rise as RECAP catches up; treat them as floors, not ceilings.</li>
     </ul>
