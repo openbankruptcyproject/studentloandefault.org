@@ -513,5 +513,204 @@
     "fy_2008_to_fy_2022_total": 302,
     "years": 15,
     "mean_per_year": 20.1
+  },
+  "servicer_breakdown": {
+    "snapshot_date": "2026-04-28",
+    "total_aps": 2045,
+    "unmatched_aps": 31,
+    "note": "An AP may match multiple servicers (multi-defendant). Sum exceeds total APs.",
+    "by_servicer": [
+      {
+        "servicer": "U.S. Department of Education",
+        "total": 1602,
+        "pre_doj": 155,
+        "post_doj": 1446,
+        "examples": [
+          "Berg v. United States Department of Education",
+          "Mansfield v. U.S. Department of Education",
+          "Cheadle v. U.S. Department of Education"
+        ]
+      },
+      {
+        "servicer": "Discover Bank / Discover Student Loans",
+        "total": 82,
+        "pre_doj": 68,
+        "post_doj": 14,
+        "examples": [
+          "Discover Bank, Issuer of the Discover Card v. Inman",
+          "Discover Bank, Issuer of the Discover Card v. Ekman",
+          "Khemmanivanh v. Discover Student Loans"
+        ]
+      },
+      {
+        "servicer": "NELNET",
+        "total": 64,
+        "pre_doj": 5,
+        "post_doj": 59,
+        "examples": [
+          "Johnson v. Nelnet/US Dept of Ed",
+          "Mitchell v. Nelnet",
+          "Crowe v. Department of Education/Nelnet"
+        ]
+      },
+      {
+        "servicer": "Navient",
+        "total": 58,
+        "pre_doj": 12,
+        "post_doj": 46,
+        "examples": [
+          "Walker v. Navient",
+          "BEAVERS v. NAVIENT CREDIT FINANCE CORP.",
+          "Stewart v. Navient Solutions, LLC"
+        ]
+      },
+      {
+        "servicer": "Sallie Mae / SLM Corp",
+        "total": 55,
+        "pre_doj": 20,
+        "post_doj": 35,
+        "examples": [
+          "Rollnick v. Sallie Mae, Inc",
+          "Rounds v. SLM Corporation (Sallie Mae)",
+          "Chancellor v. Sallie Mae Bank"
+        ]
+      },
+      {
+        "servicer": "ECMC / Educational Credit Management",
+        "total": 42,
+        "pre_doj": 21,
+        "post_doj": 21,
+        "examples": [
+          "Green v. Educational Credit Management Company (ECMC)",
+          "Bearup v. Educational Credit Management Corporation",
+          "Tyson v. Educational Credit Management"
+        ]
+      },
+      {
+        "servicer": "Mohela / Higher Education Loan Authority of MO",
+        "total": 37,
+        "pre_doj": 0,
+        "post_doj": 37,
+        "examples": [
+          "Phommarath v. Mohela",
+          "Parker v. United States Department of Education/MOHELA",
+          "Pina Mendez v. MOHELA ( Slade)"
+        ]
+      },
+      {
+        "servicer": "United States (federal, no agency in caption)",
+        "total": 32,
+        "pre_doj": 18,
+        "post_doj": 14,
+        "examples": [
+          "Marquez v. United States",
+          "Beech v. United States",
+          "Davis v. United States of America, on behalf of its agency"
+        ]
+      },
+      {
+        "servicer": "Citizens Bank",
+        "total": 29,
+        "pre_doj": 14,
+        "post_doj": 15,
+        "examples": [
+          "Citizens Bank & Trust Co. v. Wilson",
+          "Rofkahr v. Citizens Bank & Trust Company",
+          "Citizens Bank & Trust Company v. Rofkahr"
+        ]
+      },
+      {
+        "servicer": "Aidvantage",
+        "total": 28,
+        "pre_doj": 1,
+        "post_doj": 27,
+        "examples": [
+          "Harper v. Aidvantage",
+          "Hernandez v. Aidvantage",
+          "Richardson v. Aidvantage"
+        ]
+      },
+      {
+        "servicer": "AES / American Education Services",
+        "total": 11,
+        "pre_doj": 6,
+        "post_doj": 5,
+        "examples": [
+          "Reid v. American Education Services",
+          "Bridges v. American Education Services",
+          "Bridges v. American Education Services"
+        ]
+      },
+      {
+        "servicer": "Edfinancial",
+        "total": 10,
+        "pre_doj": 0,
+        "post_doj": 10,
+        "examples": [
+          "ESCOJIDO v. EDFINANCIAL SERVICES LLC",
+          "Grogan v. EDFinancial Services, LLC",
+          "Park v. U.S. Department of Education/Edfinancial"
+        ]
+      },
+      {
+        "servicer": "Pennsylvania Higher Education / PHEAA",
+        "total": 7,
+        "pre_doj": 3,
+        "post_doj": 4,
+        "examples": [
+          "McGuire v. Pennsylvania Higher Education Assistance Agency et",
+          "Musgrove v. Pennsylvania Higher Education Assistance Agency et",
+          "Ikoma v. Pennsylvania Higher Education Assistance Agency"
+        ]
+      },
+      {
+        "servicer": "FedLoan",
+        "total": 3,
+        "pre_doj": 3,
+        "post_doj": 0,
+        "examples": [
+          "Gregaitis v. Dept of Ed/ FedLoan Servicing (PHEAA)",
+          "Zingler v. Fedloan Servicing",
+          "Ellis v. Fedloan"
+        ]
+      },
+      {
+        "servicer": "Great Lakes Higher Education",
+        "total": 2,
+        "pre_doj": 1,
+        "post_doj": 1,
+        "examples": [
+          "Ferrier v. Department of Education Great Lakes",
+          "Royal v. Great Lakes Higher Education Guaranty Corp."
+        ]
+      },
+      {
+        "servicer": "ACS Education",
+        "total": 1,
+        "pre_doj": 1,
+        "post_doj": 0,
+        "examples": [
+          "Camos v. ACS Education Services/US Bank"
+        ]
+      },
+      {
+        "servicer": "MEFA / Massachusetts Educational Finance",
+        "total": 1,
+        "pre_doj": 1,
+        "post_doj": 0,
+        "examples": [
+          "Clegg v. MEFA (Massachusetts Education Finance Auth)"
+        ]
+      },
+      {
+        "servicer": "Texas Guaranteed / TG",
+        "total": 1,
+        "pre_doj": 0,
+        "post_doj": 1,
+        "examples": [
+          "Edwards v. Texas Guaranteed Student Loan Corporation"
+        ]
+      }
+    ]
   }
 }

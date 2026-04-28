@@ -422,15 +422,41 @@ footer a:hover { color: var(--text); }
 
     <p>Full list of all 90 reporting districts is in the <a href="data.json">JSON dataset</a>. The relatively flat distribution at the top of the table (counts of 24 to 40 across the top-25) reflects RECAP coverage rather than actual filing concentration; districts with weaker RECAP coverage will be undercounted.</p>
 
+    <h2>Servicer concentration: the post-guidance surge is DOE-direct</h2>
+
+    <p>The Justice Department guidance applies to federal-loan APs handled by U.S. Trustees and the Department of Education. The data shows exactly that concentration: of 1,698 post-DOJ APs in the v2 dataset, 1,446 (85 percent) name the U.S. Department of Education in the caption. Pre-DOJ DOE-named APs were 155 of 346 (45 percent). DOE-named APs grew roughly 9x post-guidance. Private-servicer APs grew much less or stayed flat. Discover Bank actually decreased.</p>
+
+    <table>
+      <thead>
+        <tr><th>Defendant servicer or agency</th><th class="num">Pre-DOJ APs</th><th class="num">Post-DOJ APs</th><th class="num">Total</th><th>Direction</th></tr>
+      </thead>
+      <tbody>
+        <tr class="surge-row"><td>U.S. Department of Education</td><td class="num">155</td><td class="num">1,446</td><td class="num">1,602</td><td>+833% (the surge)</td></tr>
+        <tr><td>NELNET</td><td class="num">5</td><td class="num">59</td><td class="num">64</td><td>+1,080%</td></tr>
+        <tr><td>Navient</td><td class="num">12</td><td class="num">46</td><td class="num">58</td><td>+283%</td></tr>
+        <tr><td>Sallie Mae / SLM Corp</td><td class="num">20</td><td class="num">35</td><td class="num">55</td><td>+75%</td></tr>
+        <tr><td>ECMC / Educational Credit Management</td><td class="num">21</td><td class="num">21</td><td class="num">42</td><td>flat</td></tr>
+        <tr><td>Mohela</td><td class="num">0</td><td class="num">37</td><td class="num">37</td><td>new (post-2022 only)</td></tr>
+        <tr><td>"v. United States" (no agency in caption)</td><td class="num">18</td><td class="num">14</td><td class="num">32</td><td>declined</td></tr>
+        <tr><td>Citizens Bank</td><td class="num">14</td><td class="num">15</td><td class="num">29</td><td>flat</td></tr>
+        <tr><td>Aidvantage</td><td class="num">1</td><td class="num">27</td><td class="num">28</td><td>new (post-2022)</td></tr>
+        <tr><td>Discover Bank / Discover Student Loans</td><td class="num">68</td><td class="num">14</td><td class="num">82</td><td><strong>declined</strong></td></tr>
+        <tr><td>AES / American Education Services</td><td class="num">6</td><td class="num">5</td><td class="num">11</td><td>flat</td></tr>
+        <tr><td>Edfinancial</td><td class="num">0</td><td class="num">10</td><td class="num">10</td><td>new (post-2022)</td></tr>
+        <tr><td>Pennsylvania Higher Education / PHEAA</td><td class="num">3</td><td class="num">4</td><td class="num">7</td><td>flat</td></tr>
+      </tbody>
+    </table>
+
+    <p>An AP can name multiple servicers (multi-defendant captions); sums exceed total APs. The "Mohela", "Aidvantage", and "Edfinancial" rows show post-2022 entrants because those servicers only entered the federal portfolio in the consolidation that followed the loan-servicing transfers of 2021-2023, not because of the DOJ guidance itself.</p>
+
     <h2>What's still on the roadmap</h2>
 
-    <p>Phase 2 (April 28, 2026) shipped: broader matcher + federal-only AP track + time-to-disposition disparity + district-level breakdown. Still ahead:</p>
+    <p>Phase 2 (April 28, 2026) shipped: broader matcher + federal-only AP track + time-to-disposition disparity + district-level breakdown + servicer concentration. Still ahead:</p>
 
     <ol>
       <li><strong>Outcome classification.</strong> For each AP in the dataset, the disposition: discharged, partial discharge, settled, denied, dismissed, or pending. Requires reading final-order text, which is gated behind paid CourtListener / RECAP tiers and PACER per-page costs. Currently not feasible on the free-data lane.</li>
       <li><strong>Pro se vs. represented success rate disparity.</strong> Coded from party / attorney metadata. The CourtListener parties endpoint requires a paid tier; pursuing alternative free signals.</li>
-      <li><strong>Servicer-by-servicer breakdown.</strong> Captioned defendant analysis (DOE versus private servicers versus mixed). Free-data feasible; on the queue.</li>
-      <li><strong>Plan classification.</strong> Chapter 7 versus Chapter 13 versus Chapter 11 of the underlying bankruptcy. Currently ~99 percent unknown in the v2 dataset because CourtListener does not consistently expose chapter on AP records.</li>
+      <li><strong>Plan classification.</strong> Chapter 7 versus Chapter 13 versus Chapter 11 of the underlying bankruptcy. CourtListener does not consistently expose chapter on AP records (only 10 of 2,045 populated; 2 of 2,045 in caption text). Requires parent-case lookup behind paid tiers; not feasible on the free lane.</li>
     </ol>
 
     <h2>For journalists, researchers, and policy staff</h2>
