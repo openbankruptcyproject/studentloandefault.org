@@ -339,12 +339,43 @@ footer a:hover { color: var(--text); }
 
     <p>Pre-DOJ APs are nearly all terminated (they are old), while only 15 percent of post-DOJ APs have terminated so far (most are still pending). The 15 percent that have terminated resolve faster than pre-DOJ APs did. This is consistent with the DOJ guidance enabling a streamlined attestation-and-consent process rather than a full Brunner-test trial.</p>
 
+    <h2>Where else this data lives, and where it doesn't</h2>
+
+    <p>A reasonable question for any reader: "Isn't this already published somewhere authoritative?" The honest answer is no, not the way it appears here. The pieces exist, but no government agency or commercial publisher runs the synthesis as a public free dataset.</p>
+
+    <table>
+      <thead>
+        <tr><th>Source</th><th>What it publishes</th><th>The gap</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>DOJ press releases</strong></td><td>August 2023: 632 APs in first 10 months post-guidance. April 2024: 1,220 cumulative through March 2024.</td><td>DOJ stopped publishing updates in April 2024. No FY-by-FY breakdown, no district detail, no pre-2022 baseline, no time-to-disposition analysis.</td></tr>
+        <tr><td><strong>Federal Judicial Center IDB</strong></td><td>All federal bankruptcy petition filings 2008-present, with chapter, debtor type, debt amounts, pro-se flag, discharge totals.</td><td>FJC's bankruptcy IDB is petition-level only. Adversary proceedings are not in the IDB. Verified by query against the FJC dataset (37.9 million petition rows; zero adversary records).</td></tr>
+        <tr><td><strong>U.S. Trustee / EOUST</strong></td><td>Internal case-management statistics.</td><td>Not public.</td></tr>
+        <tr><td><strong>Department of Education / FSA</strong></td><td>Loan portfolio status, default rates, repayment metrics.</td><td>Does not publish litigation-side data.</td></tr>
+        <tr><td><strong>AACER / Epiq</strong> (commercial)</td><td>Comprehensive bankruptcy database including AP filings.</td><td>Commercial, paid tiers. They do not publish a free public dashboard or running tracker.</td></tr>
+        <tr><td><strong>NCLC, ABI, academic researchers</strong></td><td>Periodic legal-aid analyses and academic studies citing DOJ figures.</td><td>They cite DOJ as the authority. They do not run independent counts. Academic studies are slow (multi-year lag) and topic-narrow.</td></tr>
+        <tr><td><strong>CourtListener / RECAP</strong> (Free Law Project)</td><td>Public mirror of PACER federal court documents and dockets, including bankruptcy adversary proceedings.</td><td>The underlying dockets are there, but not labeled by statute (CourtListener's nature-of-suit field is empty for nearly all bankruptcy APs). Counting requires custom queries and methodology.</td></tr>
+      </tbody>
+    </table>
+
+    <p>This page is OBP applying the missing methodology to the only free public source that has the underlying data (RECAP), and anchoring the absolute counts to DOJ's own figures. The pre-2022 baseline and the post-March-2024 trajectory are not available from any other public source we have found.</p>
+
     <h2 id="methodology">Methodology</h2>
+
+    <h3>Why OBP's counts differ from DOJ's</h3>
+    <p>DOJ has reported 632 APs in the first 10 months post-guidance and 1,220 cumulative through March 2024. OBP's RECAP-derived counts for the same window are roughly 15 to 25 percent of those figures. The gap exists for three documented reasons:</p>
+    <ul>
+      <li><strong>RECAP coverage is incomplete.</strong> The Free Law Project archive depends on user uploads, court-watcher tooling, and ongoing scraping. Not every bankruptcy adversary proceeding is mirrored. Coverage is uneven across districts and weakens for older filings; pre-2018 absolute counts are floor estimates.</li>
+      <li><strong>Servicer-name and federal captions miss some APs.</strong> The matcher requires the case caption to name a known student loan servicer or include "United States" with a student loan signal term. APs against private servicers not in the matcher list, or APs with unusual captions, are excluded.</li>
+      <li><strong>Recent filings have indexing lag.</strong> RECAP receives federal docket data from PACER on a rolling basis. Filings from the past several months are systematically undercounted at any given snapshot. The 2025 and 2026 figures will rise as RECAP catches up; treat them as floors, not ceilings.</li>
+    </ul>
+    <p>These gaps mean OBP's absolute numbers are floor estimates. The directional findings (the surge, the time-to-disposition shift, the servicer concentration) are robust because they survive the gap on both sides of the comparison.</p>
 
     <h3>Data sources</h3>
     <ul>
       <li><strong>Absolute counts (632 / 1,220):</strong> U.S. Department of Justice press releases, <a href="https://www.justice.gov/archives/opa/pr/justice-department-and-department-education-announce-successful-first-year-new-student-loan" rel="noopener">Aug 2023</a> and <a href="https://www.justice.gov/archives/opa/pr/justice-department-and-department-education-announce-continuing-success-student-loan" rel="noopener">Apr 2024</a>.</li>
-      <li><strong>Fiscal-year shape:</strong> Open Bankruptcy Project § 523(a)(8) RECAP-derived dataset, n = 1,770 dated APs from the <a href="https://www.courtlistener.com/" rel="noopener">CourtListener</a> / RECAP archive (Free Law Project) coverage of U.S. bankruptcy adversary proceedings, FY 2008 to April 27, 2026.</li>
+      <li><strong>Fiscal-year shape, district breakdown, time-to-disposition, servicer concentration:</strong> Open Bankruptcy Project § 523(a)(8) RECAP-derived dataset (v2 broader matcher), n = 2,045 dated APs from the <a href="https://www.courtlistener.com/" rel="noopener">CourtListener</a> / RECAP archive (Free Law Project) coverage of U.S. bankruptcy adversary proceedings, FY 2008 to April 27, 2026.</li>
+      <li><strong>Macro context (8.4 million bankruptcy filings 2018-2024):</strong> Federal Judicial Center Integrated Database, bankruptcy petition files (cpbank08to17 + cpbank18on), processed locally.</li>
       <li><strong>Underlying guidance:</strong> <a href="https://www.justice.gov/d9/pages/attachments/2022/11/17/student_loan_discharge_guidance_-_guidance_text_0.pdf" rel="noopener">DOJ Nov 17, 2022 guidance text</a>; National Consumer Law Center <a href="https://library.nclc.org/article/new-process-discharge-student-loans-bankruptcy" rel="noopener">explainer</a>.</li>
     </ul>
 
