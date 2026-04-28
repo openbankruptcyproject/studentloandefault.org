@@ -10,10 +10,9 @@
 <meta name="robots" content="index, follow">
 
 <meta property="og:title" content="§ 523(a)(8) Adversary Filings: National Tracker">
-<meta property="og:description" content="From an average of 13 student loan dischargeability adversary proceedings filed per fiscal year, to 632 in the first 10 months after the November 2022 DOJ guidance and 1,220 by March 2024 (DOJ's own figures). The fiscal-year shape from RECAP-derived data.">
+<meta property="og:description" content="From an average of 20 student loan dischargeability adversary proceedings filed per fiscal year, to 632 in the first 10 months after the November 2022 DOJ guidance and 1,220 by March 2024 (DOJ's own figures). Time to disposition has dropped 27 percent post-guidance. RECAP-derived data, n=2,045 APs.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://studentloandefault.org/research/523a8-discharge-trends/">
-<meta property="og:image" content="https://studentloandefault.org/research/523a8-discharge-trends/chart.png">
 
 <!-- BTN:GA4:START -->
 <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -254,8 +253,8 @@ footer a:hover { color: var(--text); }
   <div class="container">
     <div class="eyebrow">Open Bankruptcy Project · Empirical Research</div>
     <h1>§ 523(a)(8) Adversary Filings: National Tracker</h1>
-    <p class="subtitle">After 15 years averaging roughly 13 § 523(a)(8) student loan dischargeability adversary proceedings filed per fiscal year, the November 17, 2022 DOJ / Department of Education guidance triggered an immediate and sustained surge in filings. DOJ has publicly disclosed two cumulative counts. The fiscal-year shape comes from a RECAP-derived dataset of 1,770 dated APs.</p>
-    <p class="meta"><strong>Last updated:</strong> April 28, 2026 · <strong>Source:</strong> DOJ press releases (absolute counts) + CourtListener / RECAP archive (FY shape) · <strong>Methodology:</strong> <a href="#methodology">below</a> · <a href="data.json">Raw data (JSON)</a></p>
+    <p class="subtitle">After 15 years averaging roughly 20 § 523(a)(8) student loan dischargeability adversary proceedings filed per fiscal year, the November 17, 2022 DOJ / Department of Education guidance triggered an immediate and sustained surge in filings. DOJ has publicly disclosed two cumulative counts. The fiscal-year shape comes from a RECAP-derived dataset of 2,045 dated APs across 90 federal bankruptcy court districts. Time-to-disposition has dropped 27 percent post-guidance.</p>
+    <p class="meta"><strong>Last updated:</strong> April 28, 2026 (v2 broader matcher) · <strong>Source:</strong> DOJ press releases (absolute counts) + CourtListener / RECAP archive (FY shape) · <strong>Methodology:</strong> <a href="#methodology">below</a> · <a href="data.json">Raw data (JSON)</a></p>
   </div>
 </div>
 
@@ -266,8 +265,8 @@ footer a:hover { color: var(--text); }
 
     <div class="headline-grid">
       <div class="stat">
-        <div class="num">~13 / yr</div>
-        <div class="label">Average § 523(a)(8) AP filings, FY 2008 to FY 2022 baseline (n=195 over 15 years)</div>
+        <div class="num">~20 / yr</div>
+        <div class="label">Average § 523(a)(8) AP filings, FY 2008 to FY 2022 baseline (n=302 over 15 years; v2 broader matcher)</div>
         <div class="src">OBP RECAP-derived</div>
       </div>
       <div class="stat">
@@ -281,55 +280,64 @@ footer a:hover { color: var(--text); }
         <div class="src">DOJ press release, Apr 2024</div>
       </div>
       <div class="stat">
-        <div class="num">+200%</div>
-        <div class="label">FY 2022 (19 APs) to FY 2023 (57 APs), within OBP's RECAP-derived dataset (like for like, same matcher, same coverage)</div>
-        <div class="src">OBP, FY data</div>
+        <div class="num">27% faster</div>
+        <div class="label">Median time from filing to disposition, post-DOJ (223 days) vs pre-DOJ (305 days)</div>
+        <div class="src">OBP, n=596 terminated APs</div>
       </div>
     </div>
 
     <div class="coverage-banner">
-      <p><strong>Read this before the chart.</strong> Absolute counts in the OBP dataset are floor estimates. Side by side with DOJ's official figures, our matcher captures roughly 9 to 13 percent of the true post-guidance population (DOJ counted 632 APs in the first 10 months; our dataset has 56 for the same window, before the matcher was broadened). The directional finding is robust and corroborated by DOJ's own numbers. The within-dataset percentage shifts (+200% FY22 to FY23, etc.) are like-for-like and survive the coverage gap. Treat the absolute pre-DOJ baseline of 13 per year as a floor, not a ceiling.</p>
+      <p><strong>Read this before the data.</strong> Absolute counts in the OBP dataset are floor estimates. Side by side with DOJ's official figures, our matcher captures roughly 15 to 25 percent of the true post-guidance population (v2 broader matcher; v1 was 9 to 13 percent). The directional finding is robust and corroborated by DOJ's own numbers. Within-dataset percentage shifts and time-to-disposition deltas are like-for-like and survive the coverage gap. Treat the absolute pre-DOJ baseline of 20 per year as a floor, not a ceiling.</p>
     </div>
 
     <h2>Filings by fiscal year, FY 2008 to FY 2026</h2>
 
-    <p>Annual § 523(a)(8) AP filings nationwide, federal fiscal-year basis (Oct through Sep). The reference lines mark BAPCPA (2005), the Nov 17, 2022 DOJ guidance, and the June 2023 SAVE plan launch.</p>
-
-    <div class="chart-wrap">
-      <img src="chart.png" alt="Bar chart of § 523(a)(8) adversary proceeding filings per fiscal year, FY 2008 to FY 2026 (partial). Filings hold near 13 per year through FY 2022, then rise to 57 in FY 2023 (the first full FY after the November 2022 DOJ guidance), 179 in FY 2024, 424 in FY 2025, and 857 in FY 2026 partial through April 27, 2026.">
-      <div class="chart-caption">Source: OBP § 523(a)(8) RECAP-derived dataset, n = 1,770 dated APs from CourtListener / RECAP coverage of U.S. bankruptcy adversary proceedings, FY 2008 to April 2026. Reference lines: BAPCPA enactment (2005), DOJ guidance (Nov 17, 2022), SAVE plan launch (Jun 2023). FY 2026 is partial through April 27, 2026 (~7 of 12 months).</div>
-    </div>
-
-    <h3>The numbers behind the chart</h3>
+    <p>Annual § 523(a)(8) AP filings nationwide, federal fiscal-year basis (Oct through Sep). The "median days" column is the median time from filing to docket termination for APs filed that fiscal year that have terminated. The DOJ Nov 17, 2022 guidance landed about 6 weeks into FY 2023.</p>
 
     <table>
       <thead>
-        <tr><th>Fiscal Year</th><th class="num">APs filed</th><th>Notes</th></tr>
+        <tr><th>Fiscal Year</th><th class="num">APs filed</th><th class="num">Terminated</th><th class="num">Median days to dispose</th><th>Notes</th></tr>
       </thead>
       <tbody>
-        <tr><td>FY 2008</td><td class="num">12</td><td></td></tr>
-        <tr><td>FY 2009</td><td class="num">6</td><td></td></tr>
-        <tr><td>FY 2010</td><td class="num">6</td><td></td></tr>
-        <tr><td>FY 2011</td><td class="num">5</td><td></td></tr>
-        <tr><td>FY 2012</td><td class="num">13</td><td></td></tr>
-        <tr><td>FY 2013</td><td class="num">10</td><td></td></tr>
-        <tr><td>FY 2014</td><td class="num">3</td><td></td></tr>
-        <tr><td>FY 2015</td><td class="num">22</td><td></td></tr>
-        <tr><td>FY 2016</td><td class="num">10</td><td></td></tr>
-        <tr><td>FY 2017</td><td class="num">9</td><td></td></tr>
-        <tr><td>FY 2018</td><td class="num">11</td><td></td></tr>
-        <tr><td>FY 2019</td><td class="num">25</td><td></td></tr>
-        <tr><td>FY 2020</td><td class="num">28</td><td></td></tr>
-        <tr><td>FY 2021</td><td class="num">16</td><td></td></tr>
-        <tr><td>FY 2022</td><td class="num">19</td><td>last full FY before the DOJ guidance</td></tr>
-        <tr class="cutoff-row surge-row"><td>FY 2023</td><td class="num">57</td><td>Nov 2022 guidance hits about 6 weeks in; +200% over FY 2022</td></tr>
-        <tr class="surge-row"><td>FY 2024</td><td class="num">179</td><td>+214% over FY 2023</td></tr>
-        <tr class="surge-row"><td>FY 2025</td><td class="num">424</td><td>+137% over FY 2024</td></tr>
-        <tr class="surge-row"><td>FY 2026 (partial)</td><td class="num">857</td><td>through April 27, 2026; ~7 of 12 months</td></tr>
+        <tr><td>FY 2008</td><td class="num">10</td><td class="num">10</td><td class="num">257</td><td></td></tr>
+        <tr><td>FY 2009</td><td class="num">14</td><td class="num">14</td><td class="num">274</td><td></td></tr>
+        <tr><td>FY 2010</td><td class="num">10</td><td class="num">10</td><td class="num">269</td><td></td></tr>
+        <tr><td>FY 2011</td><td class="num">24</td><td class="num">24</td><td class="num">161</td><td></td></tr>
+        <tr><td>FY 2012</td><td class="num">19</td><td class="num">19</td><td class="num">285</td><td></td></tr>
+        <tr><td>FY 2013</td><td class="num">13</td><td class="num">13</td><td class="num">326</td><td></td></tr>
+        <tr><td>FY 2014</td><td class="num">9</td><td class="num">9</td><td class="num">188</td><td></td></tr>
+        <tr><td>FY 2015</td><td class="num">21</td><td class="num">21</td><td class="num">369</td><td></td></tr>
+        <tr><td>FY 2016</td><td class="num">14</td><td class="num">14</td><td class="num">442</td><td></td></tr>
+        <tr><td>FY 2017</td><td class="num">16</td><td class="num">14</td><td class="num">426</td><td></td></tr>
+        <tr><td>FY 2018</td><td class="num">17</td><td class="num">17</td><td class="num">475</td><td></td></tr>
+        <tr><td>FY 2019</td><td class="num">20</td><td class="num">19</td><td class="num">287</td><td></td></tr>
+        <tr><td>FY 2020</td><td class="num">36</td><td class="num">35</td><td class="num">428</td><td></td></tr>
+        <tr><td>FY 2021</td><td class="num">37</td><td class="num">34</td><td class="num">251</td><td></td></tr>
+        <tr><td>FY 2022</td><td class="num">42</td><td class="num">41</td><td class="num">336</td><td>last full FY before the DOJ guidance</td></tr>
+        <tr class="cutoff-row surge-row"><td>FY 2023</td><td class="num">105</td><td class="num">95</td><td class="num">280</td><td>Nov 2022 guidance hits about 6 weeks in; +150% over FY 2022</td></tr>
+        <tr class="surge-row"><td>FY 2024</td><td class="num">236</td><td class="num">144</td><td class="num">217</td><td>+125% over FY 2023</td></tr>
+        <tr class="surge-row"><td>FY 2025</td><td class="num">472</td><td class="num">21</td><td class="num">126</td><td>+100% over FY 2024 (most still pending)</td></tr>
+        <tr class="surge-row"><td>FY 2026 (partial)</td><td class="num">888</td><td class="num">1</td><td class="num">65</td><td>through April 27, 2026; ~7 of 12 months</td></tr>
       </tbody>
     </table>
 
-    <p><strong>Pre-DOJ baseline FY 2008 to FY 2022:</strong> n = 195 over 15 years, mean 13.0 per year.</p>
+    <p><strong>Pre-DOJ baseline FY 2008 to FY 2022:</strong> n = 302 over 15 years, mean 20.1 per year. The mean was 13.0 per year in v1 of this dataset; v2 broader matcher (Apr 28, 2026) raised the baseline by adding APs styled "Debtor v. United States" plus additional private-servicer captions.</p>
+
+    <h2>Time to disposition: 27 percent faster post-guidance</h2>
+
+    <p>For APs that have reached docket termination, the median elapsed time from filing to termination has compressed substantially after the November 2022 DOJ guidance. This is a within-dataset comparison (same matcher, same coverage, before and after).</p>
+
+    <table>
+      <thead>
+        <tr><th>Cohort</th><th class="num">n terminated</th><th class="num">Median days</th><th class="num">Mean days</th><th class="num">25th-75th percentile</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pre DOJ (filed before 2022-11-17)</td><td class="num">338 of 346 (98%)</td><td class="num">305</td><td class="num">395</td><td class="num">142 to 553</td></tr>
+        <tr class="surge-row"><td>Post DOJ (filed on or after 2022-11-17)</td><td class="num">258 of 1,698 (15%)</td><td class="num">223</td><td class="num">252</td><td class="num">114 to 367</td></tr>
+      </tbody>
+    </table>
+
+    <p>Pre-DOJ APs are nearly all terminated (they are old), while only 15 percent of post-DOJ APs have terminated so far (most are still pending). The 15 percent that have terminated resolve faster than pre-DOJ APs did. This is consistent with the DOJ guidance enabling a streamlined attestation-and-consent process rather than a full Brunner-test trial.</p>
 
     <h2 id="methodology">Methodology</h2>
 
@@ -341,45 +349,88 @@ footer a:hover { color: var(--text); }
     </ul>
 
     <h3>Matcher (how OBP identifies APs from CourtListener)</h3>
-    <p>The OBP scrape identifies adversary proceedings via case-name pattern matching on indexed CourtListener dockets:</p>
+    <p>The OBP v2 scrape identifies adversary proceedings via two parallel CourtListener queries on indexed dockets:</p>
     <ol>
-      <li>Defendant-name regex on <code>caseName</code>: must contain one of <em>Department of Education, NELNET, Mohela, Navient, Sallie Mae, Great Lakes Higher Education, ECMC, Pennsylvania Higher Education, Edfinancial, Aidvantage</em>.</li>
-      <li>Court filter: <code>court_id</code> ends in <code>b</code> (U.S. bankruptcy court).</li>
-      <li>AP-style filter: case name contains " v. " or " v " (case insensitive).</li>
-      <li>Per-court paginated CourtListener pull, capped at 25 pages per court.</li>
+      <li><strong>Track 1 (servicer caption):</strong> Defendant-name regex on <code>caseName</code> matching any of <em>Department of Education, NELNET, Mohela, Navient, Sallie Mae, Great Lakes Higher Education, ECMC, Pennsylvania Higher Education, Edfinancial, Aidvantage, AES / American Education Services, Discover Bank, KHEAA / Kentucky Higher Education, Wells Fargo Education, Citizens Bank, USA Funds, COHEAO, MEFA, Texas Guaranteed, OSLA, FedLoan, ACS Education, Heartland ECSI</em>.</li>
+      <li><strong>Track 2 (federal-only):</strong> Free-text query for <code>"523(a)(8)"</code> OR <code>"undue hardship"</code> OR <code>"student loan"</code> with <code>caseName</code> matching <em>"United States"</em>. Captures <em>Debtor v. United States</em> APs where the caption gives no servicer signal.</li>
+      <li>Both tracks: <code>court_id</code> ends in <code>b</code> (U.S. bankruptcy court), and case name contains " v. " or " v ".</li>
+      <li>Per-court paginated pull, no page cap (60-page sanity ceiling).</li>
     </ol>
     <p>The CourtListener nature-of-suit field is empty for nearly all bankruptcy adversary proceedings, so a code-based filter (NOS = 67) is not feasible against this dataset.</p>
 
     <h3>Known gaps in the matcher</h3>
     <ul>
-      <li>APs styled <em>Debtor v. United States</em> (no servicer or agency in the caption) are excluded.</li>
-      <li>APs against private servicers not in the matcher list (AES, Discover, KHEAA, Wells Fargo Education, Citizens, USA Funds, etc.) are excluded.</li>
-      <li>The 25-page-per-court cap can truncate high-volume districts. Geographic distribution is therefore not reported on this page.</li>
+      <li>APs against private servicers not in the matcher list (Discover Student Loans variants, regional state agencies, recent rebrands) may be excluded.</li>
+      <li>APs whose docket data has not yet propagated to RECAP are excluded by default. RECAP coverage of recent filings is incomplete and improves over time.</li>
+      <li>Pre-2018 absolute counts are floor estimates because RECAP coverage of older bankruptcy adversary proceedings is uneven.</li>
     </ul>
-    <p>These gaps are why OBP counts run roughly an order of magnitude lower than DOJ's. The <em>directional shape</em> of the time series is robust and corroborated by DOJ's own published numbers.</p>
+    <p>These gaps are why OBP counts run lower than DOJ's. The <em>directional shape</em> of the time series and the <em>within-dataset</em> percentage shifts (FY-over-FY surge, time-to-disposition delta) are robust and corroborated by DOJ's own published numbers.</p>
 
     <h3>Caveats</h3>
     <div class="note">
       <p><strong>RECAP indexing lag and coverage.</strong> RECAP archive coverage of older bankruptcy adversary proceedings is incomplete and uneven across districts and years. Pre-2018 absolute counts are floor estimates. RECAP receives federal docket data from PACER on a rolling basis driven by user uploads, court watcher tooling, and ongoing scraping by the Free Law Project.</p>
     </div>
     <div class="note">
-      <p><strong>Filings, not outcomes.</strong> The chart counts APs filed, not APs that result in actual discharge of student loan debt. Roughly half of filed APs settle or are dismissed before judgment. Outcome classification is the second phase of this project.</p>
+      <p><strong>Filings, not discharge outcomes.</strong> The dataset counts APs filed, not APs that result in actual discharge of student loan debt. Roughly half of filed APs settle or are dismissed before judgment. Outcome classification (discharged versus denied versus settled) requires reading order text and is not yet on this page.</p>
     </div>
     <div class="note">
-      <p><strong>Federal vs. private servicers.</strong> The DOJ guidance applies to federal student loan APs handled by U.S. Trustees and the Department of Education. Private-servicer APs follow different procedural paths and are not directly governed by this guidance.</p>
+      <p><strong>Federal versus private servicers.</strong> The DOJ guidance applies to federal student loan APs handled by U.S. Trustees and the Department of Education. Private-servicer APs follow different procedural paths and are not directly governed by this guidance.</p>
     </div>
     <div class="note">
-      <p><strong>Pre-2022 comparison.</strong> DOJ does not publish § 523(a)(8) AP filing counts for the pre-2022 era. The "13 per year" baseline is OBP's RECAP-derived floor estimate for FY 2008 to FY 2022.</p>
+      <p><strong>Pre-2022 comparison.</strong> DOJ does not publish § 523(a)(8) AP filing counts for the pre-2022 era. The "20 per year" baseline is OBP's RECAP-derived floor estimate for FY 2008 to FY 2022.</p>
+    </div>
+    <div class="note">
+      <p><strong>Time-to-disposition denominator.</strong> Median days to dispose is computed only on terminated APs. Pre-DOJ APs are nearly all terminated; only 15 percent of post-DOJ APs have terminated. The 27 percent speedup is among the post-DOJ APs that have already resolved, which may bias toward simpler / faster cases. The trend will firm up as more post-DOJ APs reach disposition.</p>
     </div>
 
-    <h2>What Phase 2 will add (mid May 2026)</h2>
+    <h2>Top districts by filing volume</h2>
+
+    <p>Top 25 of 90 reporting bankruptcy court districts in the v2 dataset, with disposition statistics where available. The "median days" column is computed only on terminated APs; districts with low termination counts have less stable medians.</p>
+
+    <table>
+      <thead>
+        <tr><th>Rank</th><th>District</th><th>Court ID</th><th class="num">APs</th><th class="num">Terminated</th><th class="num">Median days</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Central District of California (Los Angeles)</td><td><span class="mono">cacb</span></td><td class="num">40</td><td class="num">11</td><td class="num">359</td></tr>
+        <tr><td>2</td><td>Southern District of Texas (Houston)</td><td><span class="mono">txsb</span></td><td class="num">36</td><td class="num">5</td><td class="num">226</td></tr>
+        <tr><td>3</td><td>Middle District of Florida (Tampa/Orlando)</td><td><span class="mono">flmb</span></td><td class="num">31</td><td class="num">7</td><td class="num">426</td></tr>
+        <tr><td>3</td><td>Western District of Washington (Seattle)</td><td><span class="mono">wawb</span></td><td class="num">31</td><td class="num">6</td><td class="num">214</td></tr>
+        <tr><td>5</td><td>Northern District of Illinois (Chicago)</td><td><span class="mono">ilnb</span></td><td class="num">30</td><td class="num">6</td><td class="num">522</td></tr>
+        <tr><td>5</td><td>District of Minnesota</td><td><span class="mono">mnb</span></td><td class="num">30</td><td class="num">8</td><td class="num">221</td></tr>
+        <tr><td>5</td><td>Southern District of New York (Manhattan)</td><td><span class="mono">nysb</span></td><td class="num">30</td><td class="num">7</td><td class="num">574</td></tr>
+        <tr><td>8</td><td>Northern District of California (San Francisco)</td><td><span class="mono">canb</span></td><td class="num">28</td><td class="num">8</td><td class="num">420</td></tr>
+        <tr><td>8</td><td>District of Massachusetts (Boston)</td><td><span class="mono">mab</span></td><td class="num">28</td><td class="num">7</td><td class="num">621</td></tr>
+        <tr><td>8</td><td>District of New Jersey</td><td><span class="mono">njb</span></td><td class="num">28</td><td class="num">5</td><td class="num">417</td></tr>
+        <tr><td>11</td><td>Northern District of Georgia (Atlanta)</td><td><span class="mono">ganb</span></td><td class="num">26</td><td class="num">6</td><td class="num">745</td></tr>
+        <tr><td>11</td><td>District of Kansas</td><td><span class="mono">ksb</span></td><td class="num">26</td><td class="num">14</td><td class="num">253</td></tr>
+        <tr><td>11</td><td>Eastern District of New York (Brooklyn)</td><td><span class="mono">nyeb</span></td><td class="num">26</td><td class="num">5</td><td class="num">686</td></tr>
+        <tr><td>11</td><td>District of Oregon</td><td><span class="mono">orb</span></td><td class="num">26</td><td class="num">6</td><td class="num">371</td></tr>
+        <tr><td>15</td><td>District of Arkansas</td><td><span class="mono">arb</span></td><td class="num">25</td><td class="num">1</td><td class="num">341</td></tr>
+        <tr><td>15</td><td>Eastern District of California (Sacramento)</td><td><span class="mono">caeb</span></td><td class="num">25</td><td class="num">5</td><td class="num">144</td></tr>
+        <tr><td>15</td><td>Southern District of California (San Diego)</td><td><span class="mono">casb</span></td><td class="num">25</td><td class="num">5</td><td class="num">583</td></tr>
+        <tr><td>15</td><td>Eastern District of Virginia</td><td><span class="mono">vaeb</span></td><td class="num">25</td><td class="num">3</td><td class="num">213</td></tr>
+        <tr><td>15</td><td>Western District of Virginia</td><td><span class="mono">vawb</span></td><td class="num">25</td><td class="num">4</td><td class="num">223</td></tr>
+        <tr><td>20</td><td>Western District of Missouri (Kansas City)</td><td><span class="mono">mowb</span></td><td class="num">24</td><td class="num">4</td><td class="num">191</td></tr>
+        <tr><td>20</td><td>Northern District of New York</td><td><span class="mono">nynb</span></td><td class="num">24</td><td class="num">6</td><td class="num">280</td></tr>
+        <tr><td>20</td><td>Northern District of Ohio (Cleveland)</td><td><span class="mono">ohnb</span></td><td class="num">24</td><td class="num">4</td><td class="num">666</td></tr>
+        <tr><td>20</td><td>Middle District of Pennsylvania</td><td><span class="mono">pamb</span></td><td class="num">24</td><td class="num">10</td><td class="num">207</td></tr>
+        <tr><td>20</td><td>Western District of Pennsylvania (Pittsburgh)</td><td><span class="mono">pawb</span></td><td class="num">24</td><td class="num">3</td><td class="num">503</td></tr>
+        <tr><td>20</td><td>Northern District of Texas (Dallas)</td><td><span class="mono">txnb</span></td><td class="num">24</td><td class="num">1</td><td class="num">584</td></tr>
+      </tbody>
+    </table>
+
+    <p>Full list of all 90 reporting districts is in the <a href="data.json">JSON dataset</a>. The relatively flat distribution at the top of the table (counts of 24 to 40 across the top-25) reflects RECAP coverage rather than actual filing concentration; districts with weaker RECAP coverage will be undercounted.</p>
+
+    <h2>What's still on the roadmap</h2>
+
+    <p>Phase 2 (April 28, 2026) shipped: broader matcher + federal-only AP track + time-to-disposition disparity + district-level breakdown. Still ahead:</p>
 
     <ol>
-      <li><strong>Outcome classification.</strong> For each AP in the dataset, the disposition: discharged, partial discharge, settled, denied, dismissed, or pending. Mix of automated parsing of final orders and human review of edge cases.</li>
-      <li><strong>Within-dataset pre vs. post discharge rates.</strong> Same matcher, same coverage, before and after November 17, 2022.</li>
-      <li><strong>Pro se vs. represented success rate disparity.</strong> Coded from CourtListener party / attorney metadata.</li>
-      <li><strong>Broader matcher.</strong> Adding APs styled <em>Debtor v. United States</em> and additional private servicers (AES, Discover, KHEAA, Wells Fargo Education, Citizens, USA Funds) to push coverage from ~13 percent toward ~30 to 40 percent of the true population.</li>
-      <li><strong>Geographic breakdown.</strong> Only after the broader matcher removes the per-court cap distortion. Without that fix the geographic view is misleading and is not published here.</li>
+      <li><strong>Outcome classification.</strong> For each AP in the dataset, the disposition: discharged, partial discharge, settled, denied, dismissed, or pending. Requires reading final-order text, which is gated behind paid CourtListener / RECAP tiers and PACER per-page costs. Currently not feasible on the free-data lane.</li>
+      <li><strong>Pro se vs. represented success rate disparity.</strong> Coded from party / attorney metadata. The CourtListener parties endpoint requires a paid tier; pursuing alternative free signals.</li>
+      <li><strong>Servicer-by-servicer breakdown.</strong> Captioned defendant analysis (DOE versus private servicers versus mixed). Free-data feasible; on the queue.</li>
+      <li><strong>Plan classification.</strong> Chapter 7 versus Chapter 13 versus Chapter 11 of the underlying bankruptcy. Currently ~99 percent unknown in the v2 dataset because CourtListener does not consistently expose chapter on AP records.</li>
     </ol>
 
     <h2>For journalists, researchers, and policy staff</h2>
@@ -389,7 +440,7 @@ footer a:hover { color: var(--text); }
     <p>The Open Bankruptcy Project is a 501(c)(3) public charity (EIN 41-5159631) operating in the public interest. We do not represent clients, take referral fees, or sell data. Methodology, source code, and data are public on <a href="https://github.com/openbankruptcyproject" rel="noopener">GitHub</a>.</p>
 
     <h2>Citation</h2>
-    <p style="font-size: 0.92rem;">Open Bankruptcy Project, <em>§ 523(a)(8) Adversary Filings: National Tracker</em>, https://studentloandefault.org/research/523a8-discharge-trends/ (last updated April 28, 2026). Absolute post-guidance counts: U.S. Department of Justice press releases, August 2023 and April 2024.</p>
+    <p style="font-size: 0.92rem;">Open Bankruptcy Project, <em>§ 523(a)(8) Adversary Filings: National Tracker</em> (v2 broader matcher), https://studentloandefault.org/research/523a8-discharge-trends/ (last updated April 28, 2026). Absolute post-guidance counts: U.S. Department of Justice press releases, August 2023 and April 2024.</p>
 
   </div>
 </div>

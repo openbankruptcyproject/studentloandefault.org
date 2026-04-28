@@ -1,73 +1,517 @@
 {
-  "dataset_name": "OBP § 523(a)(8) Adversary-Proceeding RECAP-derived dataset",
-  "snapshot_date": "2026-04-27",
-  "page_published": "2026-04-28",
-  "source": "CourtListener / RECAP archive (Free Law Project)",
-  "matcher": "case-name regex (defendant servicer or agency) + 'v.' + bankruptcy court ID ending in 'b'; per-court paginated CourtListener pulls",
-  "covered_servicers_in_matcher": [
-    "U.S. Department of Education",
-    "NELNET",
-    "Mohela",
-    "Navient",
-    "Sallie Mae",
-    "Great Lakes Higher Education",
-    "ECMC",
-    "Pennsylvania Higher Education",
-    "Edfinancial",
-    "Aidvantage"
-  ],
-  "rows_total": 1771,
-  "rows_dated": 1770,
-  "rows_undated": 1,
-  "pre_doj_count": 254,
-  "post_doj_count": 1516,
-  "doj_guidance_date": "2022-11-17",
-  "by_fiscal_year": {
-    "FY2008": 12,
-    "FY2009": 6,
-    "FY2010": 6,
-    "FY2011": 5,
-    "FY2012": 13,
-    "FY2013": 10,
-    "FY2014": 3,
-    "FY2015": 22,
-    "FY2016": 10,
-    "FY2017": 9,
-    "FY2018": 11,
-    "FY2019": 25,
-    "FY2020": 28,
-    "FY2021": 16,
-    "FY2022": 19,
-    "FY2023": 57,
-    "FY2024": 179,
-    "FY2025": 424,
-    "FY2026_partial_through_2026_04_27": 857
+  "dataset": "OBP \u00a7 523(a)(8) v2 (broader matcher, free CL tier)",
+  "snapshot_date": "2026-04-28",
+  "total_aps": 2045,
+  "districts_represented": 90,
+  "by_track": {
+    "expanded_servicers": 1755,
+    "federal_us": 290
   },
-  "pre_doj_baseline_fy2008_to_fy2022": {
-    "total_aps": 195,
+  "by_pre_post_doj": {
+    "post": 1698,
+    "pre": 346,
+    "unknown": 1
+  },
+  "totals": {
+    "pre_doj": 346,
+    "post_doj": 1698
+  },
+  "termination_rates": {
+    "pre_doj": {
+      "total": 346,
+      "terminated": 338,
+      "rate": 0.977
+    },
+    "post_doj": {
+      "total": 1698,
+      "terminated": 260,
+      "rate": 0.153
+    }
+  },
+  "time_to_disposition_days": {
+    "pre_doj": {
+      "n": 338,
+      "median": 305,
+      "mean": 395.4,
+      "p25": 149,
+      "p75": 531
+    },
+    "post_doj": {
+      "n": 258,
+      "median": 223,
+      "mean": 252.4,
+      "p25": 153,
+      "p75": 320
+    }
+  },
+  "by_calendar_year": {
+    "1999": 1,
+    "2002": 1,
+    "2004": 4,
+    "2005": 16,
+    "2006": 15,
+    "2007": 6,
+    "2008": 12,
+    "2009": 11,
+    "2010": 16,
+    "2011": 21,
+    "2012": 20,
+    "2013": 11,
+    "2014": 11,
+    "2015": 19,
+    "2016": 12,
+    "2017": 18,
+    "2018": 20,
+    "2019": 19,
+    "2020": 35,
+    "2021": 46,
+    "2022": 40,
+    "2023": 141,
+    "2024": 262,
+    "2025": 609,
+    "2026": 678
+  },
+  "by_fiscal_year": [
+    {
+      "fy": 1999,
+      "filed": 1,
+      "terminated": 1,
+      "median_days_to_terminate": 350
+    },
+    {
+      "fy": 2002,
+      "filed": 1,
+      "terminated": 1,
+      "median_days_to_terminate": 662
+    },
+    {
+      "fy": 2004,
+      "filed": 2,
+      "terminated": 2,
+      "median_days_to_terminate": 574
+    },
+    {
+      "fy": 2005,
+      "filed": 16,
+      "terminated": 16,
+      "median_days_to_terminate": 531
+    },
+    {
+      "fy": 2006,
+      "filed": 15,
+      "terminated": 15,
+      "median_days_to_terminate": 207
+    },
+    {
+      "fy": 2007,
+      "filed": 6,
+      "terminated": 6,
+      "median_days_to_terminate": 421
+    },
+    {
+      "fy": 2008,
+      "filed": 10,
+      "terminated": 10,
+      "median_days_to_terminate": 257
+    },
+    {
+      "fy": 2009,
+      "filed": 14,
+      "terminated": 14,
+      "median_days_to_terminate": 274
+    },
+    {
+      "fy": 2010,
+      "filed": 10,
+      "terminated": 10,
+      "median_days_to_terminate": 269
+    },
+    {
+      "fy": 2011,
+      "filed": 24,
+      "terminated": 24,
+      "median_days_to_terminate": 161
+    },
+    {
+      "fy": 2012,
+      "filed": 19,
+      "terminated": 19,
+      "median_days_to_terminate": 285
+    },
+    {
+      "fy": 2013,
+      "filed": 13,
+      "terminated": 13,
+      "median_days_to_terminate": 326
+    },
+    {
+      "fy": 2014,
+      "filed": 9,
+      "terminated": 9,
+      "median_days_to_terminate": 188
+    },
+    {
+      "fy": 2015,
+      "filed": 21,
+      "terminated": 21,
+      "median_days_to_terminate": 369
+    },
+    {
+      "fy": 2016,
+      "filed": 14,
+      "terminated": 14,
+      "median_days_to_terminate": 442
+    },
+    {
+      "fy": 2017,
+      "filed": 16,
+      "terminated": 14,
+      "median_days_to_terminate": 426
+    },
+    {
+      "fy": 2018,
+      "filed": 17,
+      "terminated": 17,
+      "median_days_to_terminate": 475
+    },
+    {
+      "fy": 2019,
+      "filed": 20,
+      "terminated": 19,
+      "median_days_to_terminate": 287
+    },
+    {
+      "fy": 2020,
+      "filed": 36,
+      "terminated": 35,
+      "median_days_to_terminate": 428
+    },
+    {
+      "fy": 2021,
+      "filed": 37,
+      "terminated": 34,
+      "median_days_to_terminate": 251
+    },
+    {
+      "fy": 2022,
+      "filed": 42,
+      "terminated": 41,
+      "median_days_to_terminate": 336
+    },
+    {
+      "fy": 2023,
+      "filed": 105,
+      "terminated": 95,
+      "median_days_to_terminate": 280
+    },
+    {
+      "fy": 2024,
+      "filed": 236,
+      "terminated": 144,
+      "median_days_to_terminate": 217
+    },
+    {
+      "fy": 2025,
+      "filed": 472,
+      "terminated": 21,
+      "median_days_to_terminate": 126
+    },
+    {
+      "fy": 2026,
+      "filed": 888,
+      "terminated": 1,
+      "median_days_to_terminate": 65
+    }
+  ],
+  "top_districts": [
+    {
+      "court_id": "cacb",
+      "total_aps": 40,
+      "terminated": 11,
+      "termination_rate": 0.275,
+      "median_days": 359
+    },
+    {
+      "court_id": "txsb",
+      "total_aps": 36,
+      "terminated": 5,
+      "termination_rate": 0.139,
+      "median_days": 226
+    },
+    {
+      "court_id": "flmb",
+      "total_aps": 31,
+      "terminated": 7,
+      "termination_rate": 0.226,
+      "median_days": 426
+    },
+    {
+      "court_id": "wawb",
+      "total_aps": 31,
+      "terminated": 6,
+      "termination_rate": 0.194,
+      "median_days": 214
+    },
+    {
+      "court_id": "ilnb",
+      "total_aps": 30,
+      "terminated": 6,
+      "termination_rate": 0.2,
+      "median_days": 522
+    },
+    {
+      "court_id": "mnb",
+      "total_aps": 30,
+      "terminated": 8,
+      "termination_rate": 0.267,
+      "median_days": 221
+    },
+    {
+      "court_id": "nysb",
+      "total_aps": 30,
+      "terminated": 7,
+      "termination_rate": 0.233,
+      "median_days": 574
+    },
+    {
+      "court_id": "canb",
+      "total_aps": 28,
+      "terminated": 8,
+      "termination_rate": 0.286,
+      "median_days": 420
+    },
+    {
+      "court_id": "mab",
+      "total_aps": 28,
+      "terminated": 7,
+      "termination_rate": 0.25,
+      "median_days": 621
+    },
+    {
+      "court_id": "njb",
+      "total_aps": 28,
+      "terminated": 5,
+      "termination_rate": 0.179,
+      "median_days": 417
+    },
+    {
+      "court_id": "ganb",
+      "total_aps": 26,
+      "terminated": 6,
+      "termination_rate": 0.231,
+      "median_days": 745
+    },
+    {
+      "court_id": "ksb",
+      "total_aps": 26,
+      "terminated": 14,
+      "termination_rate": 0.538,
+      "median_days": 253
+    },
+    {
+      "court_id": "nyeb",
+      "total_aps": 26,
+      "terminated": 5,
+      "termination_rate": 0.192,
+      "median_days": 686
+    },
+    {
+      "court_id": "orb",
+      "total_aps": 26,
+      "terminated": 6,
+      "termination_rate": 0.231,
+      "median_days": 371
+    },
+    {
+      "court_id": "arb",
+      "total_aps": 25,
+      "terminated": 1,
+      "termination_rate": 0.04,
+      "median_days": 341
+    },
+    {
+      "court_id": "caeb",
+      "total_aps": 25,
+      "terminated": 5,
+      "termination_rate": 0.2,
+      "median_days": 144
+    },
+    {
+      "court_id": "casb",
+      "total_aps": 25,
+      "terminated": 5,
+      "termination_rate": 0.2,
+      "median_days": 583
+    },
+    {
+      "court_id": "vaeb",
+      "total_aps": 25,
+      "terminated": 3,
+      "termination_rate": 0.12,
+      "median_days": 213
+    },
+    {
+      "court_id": "vawb",
+      "total_aps": 25,
+      "terminated": 4,
+      "termination_rate": 0.16,
+      "median_days": 223
+    },
+    {
+      "court_id": "mowb",
+      "total_aps": 24,
+      "terminated": 4,
+      "termination_rate": 0.167,
+      "median_days": 191
+    },
+    {
+      "court_id": "nynb",
+      "total_aps": 24,
+      "terminated": 6,
+      "termination_rate": 0.25,
+      "median_days": 280
+    },
+    {
+      "court_id": "ohnb",
+      "total_aps": 24,
+      "terminated": 4,
+      "termination_rate": 0.167,
+      "median_days": 666
+    },
+    {
+      "court_id": "pamb",
+      "total_aps": 24,
+      "terminated": 10,
+      "termination_rate": 0.417,
+      "median_days": 207
+    },
+    {
+      "court_id": "pawb",
+      "total_aps": 24,
+      "terminated": 3,
+      "termination_rate": 0.125,
+      "median_days": 503
+    },
+    {
+      "court_id": "txnb",
+      "total_aps": 24,
+      "terminated": 1,
+      "termination_rate": 0.043,
+      "median_days": 584
+    },
+    {
+      "court_id": "txwb",
+      "total_aps": 24,
+      "terminated": 4,
+      "termination_rate": 0.167,
+      "median_days": 246
+    },
+    {
+      "court_id": "wiwb",
+      "total_aps": 24,
+      "terminated": 3,
+      "termination_rate": 0.125,
+      "median_days": 256
+    },
+    {
+      "court_id": "almb",
+      "total_aps": 23,
+      "terminated": 2,
+      "termination_rate": 0.087,
+      "median_days": 615
+    },
+    {
+      "court_id": "arwb",
+      "total_aps": 23,
+      "terminated": 11,
+      "termination_rate": 0.478,
+      "median_days": 234
+    },
+    {
+      "court_id": "cob",
+      "total_aps": 23,
+      "terminated": 3,
+      "termination_rate": 0.13,
+      "median_days": 451
+    },
+    {
+      "court_id": "ctb",
+      "total_aps": 23,
+      "terminated": 2,
+      "termination_rate": 0.087,
+      "median_days": 342
+    },
+    {
+      "court_id": "insb",
+      "total_aps": 23,
+      "terminated": 3,
+      "termination_rate": 0.13,
+      "median_days": 132
+    },
+    {
+      "court_id": "mieb",
+      "total_aps": 23,
+      "terminated": 2,
+      "termination_rate": 0.087,
+      "median_days": 182
+    },
+    {
+      "court_id": "paeb",
+      "total_aps": 23,
+      "terminated": 1,
+      "termination_rate": 0.043,
+      "median_days": 506
+    },
+    {
+      "court_id": "gamb",
+      "total_aps": 22,
+      "terminated": 3,
+      "termination_rate": 0.136,
+      "median_days": 451
+    },
+    {
+      "court_id": "iasb",
+      "total_aps": 22,
+      "terminated": 2,
+      "termination_rate": 0.091,
+      "median_days": 1210
+    },
+    {
+      "court_id": "ilcb",
+      "total_aps": 22,
+      "terminated": 11,
+      "termination_rate": 0.5,
+      "median_days": 186
+    },
+    {
+      "court_id": "innb",
+      "total_aps": 22,
+      "terminated": 6,
+      "termination_rate": 0.273,
+      "median_days": 191
+    },
+    {
+      "court_id": "mdb",
+      "total_aps": 22,
+      "terminated": 2,
+      "termination_rate": 0.091,
+      "median_days": 1082
+    },
+    {
+      "court_id": "ohsb",
+      "total_aps": 22,
+      "terminated": 1,
+      "termination_rate": 0.045,
+      "median_days": 1232
+    }
+  ],
+  "doj_anchors": {
+    "first_10_months": 632,
+    "cumulative_through_march_2024": 1220
+  },
+  "pre_doj_baseline": {
+    "fy_2008_to_fy_2022_total": 302,
     "years": 15,
-    "mean_per_year": 13.0
-  },
-  "doj_official_anchors": {
-    "first_10_months_post_guidance_nov2022_to_sep2023": 632,
-    "cumulative_through_march_2024": 1220,
-    "source_aug_2023": "https://www.justice.gov/archives/opa/pr/justice-department-and-department-education-announce-successful-first-year-new-student-loan",
-    "source_apr_2024": "https://www.justice.gov/archives/opa/pr/justice-department-and-department-education-announce-continuing-success-student-loan"
-  },
-  "coverage_caveats": [
-    "RECAP archive coverage of bankruptcy adversary proceedings is incomplete and uneven across districts and years. Pre-2018 absolute counts are floor estimates.",
-    "OBP RECAP-derived counts run roughly 9 to 13 percent of DOJ's officially disclosed counts in the comparable post-guidance window, per side-by-side comparison with DOJ press releases. The directional shape is robust; absolute counts are floors.",
-    "Case-name regex excludes APs styled 'Debtor v. United States' (no servicer in caption) and APs against private servicers not in the matcher list (AES, Discover, KHEAA, Wells Fargo Education, Citizens, USA Funds, etc.).",
-    "CourtListener nature-of-suit field is empty for nearly all bankruptcy adversary proceedings, so a code-based filter (e.g., NOS=67) is not feasible.",
-    "Per-court paginated pull has a 25-page-per-court cap (~500 rows/court max). Geographic distribution is therefore not reported on this page; high-volume districts are likely under-represented.",
-    "The chart counts APs filed, not APs that result in actual discharge. Roughly half of filed APs settle or are dismissed before judgment.",
-    "DOJ guidance applies to federal student-loan APs handled by U.S. Trustees and the Department of Education. Private-servicer APs follow different procedural paths."
-  ],
-  "phase_2_planned_mid_may_2026": [
-    "Outcome classification per AP (full discharge / partial / settled / denied / dismissed / pending).",
-    "Within-dataset pre vs. post discharge rates (same matcher, before and after Nov 17, 2022).",
-    "Pro se vs. represented success rate disparity (CourtListener party/attorney metadata).",
-    "Broader matcher pulling APs styled 'Debtor v. United States' and additional private servicers, to narrow the coverage gap from ~13 percent toward ~30 to 40 percent.",
-    "Geographic breakdown (only after broader matcher removes the per-court cap distortion)."
-  ]
+    "mean_per_year": 20.1
+  }
 }
