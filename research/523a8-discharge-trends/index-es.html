@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>Procedimientos Adversariales § 523(a)(8): Rastreador Nacional | Open Bankruptcy Project</title>
+<meta name="description" content="Rastreador empírico de procedimientos adversariales sobre la descargabilidad de préstamos estudiantiles (11 U.S.C. § 523(a)(8)) en tribunales de bancarrota de EE.UU. Comparación pre y post guía del DOJ de noviembre de 2022.">
+<link rel="canonical" href="https://studentloandefault.org/research/523a8-discharge-trends/index-es.html">
+<link rel="alternate" hreflang="es" href="https://studentloandefault.org/research/523a8-discharge-trends/index-es.html">
+<link rel="alternate" hreflang="en" href="https://studentloandefault.org/research/523a8-discharge-trends/">
+<link rel="alternate" hreflang="x-default" href="https://studentloandefault.org/research/523a8-discharge-trends/">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Procedimientos Adversariales § 523(a)(8): Rastreador Nacional">
+<meta property="og:description" content="De un promedio de 20 procedimientos adversariales por año fiscal sobre descarga de préstamos estudiantiles, a 632 en los primeros 10 meses tras la guía del DOJ de noviembre de 2022 y 1,220 hacia marzo de 2024 (cifras del propio DOJ). Tiempo a disposición ha bajado 27%.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es">
+<meta property="og:url" content="https://studentloandefault.org/research/523a8-discharge-trends/index-es.html">
+<meta property="og:image" content="https://openbankruptcyproject.org/og-default.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Procedimientos Adversariales § 523(a)(8): Rastreador Nacional">
+<meta name="twitter:description" content="De un promedio de 20 procedimientos adversariales por año fiscal a 632 en los primeros 10 meses post-guía del DOJ. Datos derivados de RECAP, n=2,045 APs.">
+<meta name="twitter:image" content="https://openbankruptcyproject.org/og-default.svg">
+
+<!-- BTN:GA4:START -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTWLM223G7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('set', 'allow_ad_personalization_signals', false);
+  gtag('config', 'G-FTWLM223G7');
+  gtag('config', 'G-053Z64N82F');
+</script>
+<!-- BTN:GA4:END -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Procedimientos Adversariales § 523(a)(8): Rastreador Nacional",
+  "description": "Rastreador empírico de procedimientos adversariales sobre descargabilidad de préstamos estudiantiles bajo 11 U.S.C. § 523(a)(8). Forma de año fiscal a partir de un dataset derivado de RECAP; conteos absolutos anclados a las cifras publicadas por el DOJ.",
+  "url": "https://studentloandefault.org/research/523a8-discharge-trends/index-es.html",
+  "keywords": ["préstamo estudiantil", "bancarrota", "523(a)(8)", "dificultad excesiva", "Brunner", "descarga", "procedimiento adversarial"],
+  "creator": {
+    "@type": "NonprofitOrganization",
+    "name": "Open Bankruptcy Project",
+    "url": "https://openbankruptcyproject.org"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "datePublished": "2026-04-28",
+  "inLanguage": "es",
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/json",
+    "contentUrl": "https://studentloandefault.org/research/523a8-discharge-trends/data.json"
+  }
+}
+</script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #0d1117; --surface: #151b23; --border: #252d38;
+  --text: #e6edf3; --text-secondary: #b1bac4; --text-muted: #7d8590;
+  --accent: #58a6ff; --accent-hover: #79b8ff;
+  --green: #3fb950; --orange: #d29922; --red: #f85149;
+}
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+.container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+nav { border-bottom: 1px solid var(--border); padding: 16px 0; background: rgba(13, 17, 23, 0.95); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 10; }
+nav .nav-inner { max-width: 1040px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.nav-brand { font-size: 1.05rem; font-weight: 700; color: var(--text); }
+.nav-brand a { color: var(--text); }
+.nav-links a { color: var(--text-muted); font-size: 0.88rem; font-weight: 500; margin-left: 20px; }
+.nav-links a:hover { color: var(--text); }
+.lang-bar { background: #161b22; border-bottom: 1px solid #30363d; padding: 8px 16px; text-align: center; font-size: 0.85em; }
+.lang-bar a { color: #58a6ff; text-decoration: none; }
+.page-header { padding: 64px 0 40px; border-bottom: 1px solid var(--border); }
+.page-header .eyebrow { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; font-weight: 600; }
+.page-header h1 { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 14px; line-height: 1.2; }
+.page-header .subtitle { font-size: 1.08rem; color: var(--text-secondary); max-width: 680px; }
+.page-header .meta { margin-top: 20px; font-size: 0.85rem; color: var(--text-muted); }
+.page-header .meta strong { color: var(--text-secondary); font-weight: 600; }
+.content { padding: 48px 0 64px; }
+.content h2 { font-size: 1.5rem; font-weight: 700; margin: 48px 0 16px; letter-spacing: -0.01em; }
+.content h2:first-child { margin-top: 0; }
+.content h3 { font-size: 1.1rem; font-weight: 700; margin: 24px 0 10px; color: var(--text); }
+.content p { color: var(--text-secondary); margin-bottom: 16px; font-size: 1rem; }
+.content p strong { color: var(--text); font-weight: 600; }
+.content ul, .content ol { color: var(--text-secondary); margin: 0 0 16px 22px; line-height: 1.8; }
+.content li { margin-bottom: 6px; }
+.headline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin: 28px 0; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px 18px; }
+.stat .num { font-size: 1.9rem; font-weight: 800; color: var(--text); letter-spacing: -0.02em; line-height: 1.1; }
+.stat .label { font-size: 0.82rem; color: var(--text-muted); margin-top: 6px; line-height: 1.4; }
+.stat .src { font-size: 0.72rem; color: var(--text-muted); margin-top: 6px; font-style: italic; }
+.coverage-banner { background: rgba(210, 153, 34, 0.08); border: 1px solid rgba(210, 153, 34, 0.35); border-radius: 6px; padding: 16px 20px; margin: 28px 0; font-size: 0.95rem; color: var(--text-secondary); }
+.coverage-banner strong { color: var(--orange); }
+.chart-wrap { margin: 28px 0; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px; }
+.chart-wrap img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.chart-caption { font-size: 0.85rem; color: var(--text-muted); margin-top: 12px; line-height: 1.6; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 0.92rem; }
+table th, table td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--border); }
+table th { font-weight: 600; color: var(--text-muted); font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; }
+table td { color: var(--text-secondary); }
+table td.num { text-align: right; font-variant-numeric: tabular-nums; color: var(--text); font-weight: 500; }
+table tr.surge-row td { color: var(--text); font-weight: 600; }
+table tr.surge-row td.num { color: var(--green); }
+table tr.cutoff-row td { border-top: 2px solid rgba(210, 153, 34, 0.5); }
+.note { background: rgba(110, 118, 129, 0.06); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; margin: 14px 0; font-size: 0.92rem; color: var(--text-secondary); }
+.note strong { color: var(--text); }
+code, .mono { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 0.88em; background: rgba(110, 118, 129, 0.18); padding: 1px 6px; border-radius: 3px; color: var(--text); }
+footer { padding: 40px 0 32px; text-align: center; color: var(--text-muted); font-size: 0.82rem; border-top: 1px solid var(--border); }
+footer a { color: var(--text-muted); margin: 0 10px; }
+footer a:hover { color: var(--text); }
+@media (max-width: 600px) {
+  .container { padding: 0 18px; }
+  .page-header { padding: 40px 0 28px; }
+  .page-header h1 { font-size: 1.8rem; }
+  .content { padding: 32px 0 48px; }
+  .stat .num { font-size: 1.6rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="lang-bar"><a href="/research/523a8-discharge-trends/">🌐 Read this page in English</a></div>
+
+<nav>
+<div class="nav-inner">
+<div class="nav-brand"><a href="/es.html">studentloandefault.org</a></div>
+<div class="nav-links">
+<a href="/es.html">Inicio</a>
+<a href="/research/523a8-discharge-trends/">English</a>
+<a href="https://openbankruptcyproject.org">Open Bankruptcy Project</a>
+</div>
+</div>
+</nav>
+
+<div class="container">
+
+<header class="page-header">
+<div class="eyebrow">Investigación · Rastreador Nacional</div>
+<h1>Procedimientos Adversariales § 523(a)(8): Rastreador Nacional</h1>
+<p class="subtitle">El punto único de referencia, gratuito y público, para ver cómo la guía del Departamento de Justicia (DOJ) de noviembre de 2022 cambió las cifras de descarga de préstamos estudiantiles en bancarrota — anclado a las propias cifras publicadas por el DOJ.</p>
+<div class="meta">
+<strong>Última actualización:</strong> 28 de abril de 2026 ·
+<strong>Datos:</strong> n=2,045 APs derivados de RECAP, FY 2008 hasta 27 de abril de 2026 ·
+<strong>Licencia:</strong> CC BY 4.0 ·
+<a href="data.json">Descargar JSON</a>
+</div>
+</header>
+
+<main class="content">
+
+<h2>Hallazgos principales</h2>
+
+<div class="headline-grid">
+<div class="stat">
+<div class="num">~20</div>
+<div class="label">Procedimientos adversariales por año fiscal, FY 2008 a FY 2022 (línea base pre-guía)</div>
+<div class="src">OBP, n=302</div>
+</div>
+<div class="stat">
+<div class="num">632</div>
+<div class="label">APs en los primeros 10 meses tras la guía del DOJ de noviembre de 2022</div>
+<div class="src">Comunicado del DOJ, agosto 2023</div>
+</div>
+<div class="stat">
+<div class="num">1,220</div>
+<div class="label">APs acumulados hasta marzo de 2024 (~17 meses post guía)</div>
+<div class="src">Comunicado del DOJ, abril 2024</div>
+</div>
+<div class="stat">
+<div class="num">27% más rápido</div>
+<div class="label">Mediana del tiempo de presentación a disposición, post-DOJ (223 días) vs pre-DOJ (305 días)</div>
+<div class="src">OBP, n=596 APs terminados</div>
+</div>
+</div>
+
+<div class="coverage-banner">
+<p><strong>Lea esto antes de los datos.</strong> Todos los conteos de APs § 523(a)(8) en esta página provienen del archivo RECAP (CourtListener / Free Law Project), la única fuente nacional gratuita para procedimientos adversariales de bancarrota. <strong>RECAP no contiene todos los APs</strong>; la cobertura depende de cargas de usuarios, herramientas de observadores judiciales y scraping continuo. Junto con las cifras oficiales del DOJ, nuestro <em>matcher</em> captura aproximadamente entre el 15% y el 25% de la población real post-guía. Trate todos los conteos absolutos como <strong>estimaciones piso</strong>. Los hallazgos direccionales (la oleada, la compresión del tiempo a disposición, la concentración por administrador) son robustos porque sobreviven a la brecha de cobertura en ambos lados de la comparación.</p>
+</div>
+
+<h2>Presentaciones por año fiscal, FY 2008 a FY 2026</h2>
+
+<p>Presentaciones anuales de APs § 523(a)(8) a nivel nacional, base de año fiscal federal (octubre a septiembre). La columna "días mediana" es el tiempo mediano de presentación a terminación del expediente. La guía del DOJ del 17 de noviembre de 2022 llegó cerca de 6 semanas dentro del FY 2023.</p>
+
+<div class="chart-wrap">
+<img src="chart.png" alt="Gráfico de barras de presentaciones de procedimientos adversariales § 523(a)(8) por año fiscal, FY 2008 a FY 2026 parcial. Pre-guía: 9 a 42 por año. FY 2023: 105. FY 2024: 236. FY 2025: 472. FY 2026 parcial: 888.">
+<div class="chart-caption">Matcher v2 ampliado, dataset OBP derivado de RECAP, n=2,045 APs fechados. FY 2026 es parcial hasta el 27 de abril de 2026.</div>
+</div>
+
+<table>
+<thead>
+<tr><th>Año Fiscal</th><th class="num">APs presentados</th><th class="num">Terminados</th><th class="num">Días mediana</th><th>Notas</th></tr>
+</thead>
+<tbody>
+<tr><td>FY 2008</td><td class="num">10</td><td class="num">10</td><td class="num">257</td><td></td></tr>
+<tr><td>FY 2009</td><td class="num">14</td><td class="num">14</td><td class="num">274</td><td></td></tr>
+<tr><td>FY 2010</td><td class="num">10</td><td class="num">10</td><td class="num">269</td><td></td></tr>
+<tr><td>FY 2011</td><td class="num">24</td><td class="num">24</td><td class="num">161</td><td></td></tr>
+<tr><td>FY 2012</td><td class="num">19</td><td class="num">19</td><td class="num">285</td><td></td></tr>
+<tr><td>FY 2013</td><td class="num">13</td><td class="num">13</td><td class="num">326</td><td></td></tr>
+<tr><td>FY 2014</td><td class="num">9</td><td class="num">9</td><td class="num">188</td><td></td></tr>
+<tr><td>FY 2015</td><td class="num">21</td><td class="num">21</td><td class="num">369</td><td></td></tr>
+<tr><td>FY 2016</td><td class="num">14</td><td class="num">14</td><td class="num">442</td><td></td></tr>
+<tr><td>FY 2017</td><td class="num">16</td><td class="num">14</td><td class="num">426</td><td></td></tr>
+<tr><td>FY 2018</td><td class="num">17</td><td class="num">17</td><td class="num">475</td><td></td></tr>
+<tr><td>FY 2019</td><td class="num">20</td><td class="num">19</td><td class="num">287</td><td></td></tr>
+<tr><td>FY 2020</td><td class="num">36</td><td class="num">35</td><td class="num">428</td><td></td></tr>
+<tr><td>FY 2021</td><td class="num">37</td><td class="num">34</td><td class="num">251</td><td></td></tr>
+<tr><td>FY 2022</td><td class="num">42</td><td class="num">41</td><td class="num">336</td><td>último FY completo antes de la guía del DOJ</td></tr>
+<tr class="cutoff-row surge-row"><td>FY 2023</td><td class="num">105</td><td class="num">95</td><td class="num">280</td><td>guía nov 2022 llega ~6 semanas dentro; +150% sobre FY 2022</td></tr>
+<tr class="surge-row"><td>FY 2024</td><td class="num">236</td><td class="num">144</td><td class="num">217</td><td>+125% sobre FY 2023</td></tr>
+<tr class="surge-row"><td>FY 2025</td><td class="num">472</td><td class="num">21</td><td class="num">126</td><td>+100% sobre FY 2024 (la mayoría aún pendientes)</td></tr>
+<tr class="surge-row"><td>FY 2026 (parcial)</td><td class="num">888</td><td class="num">1</td><td class="num">65</td><td>hasta 27 abril 2026; ~7 de 12 meses</td></tr>
+</tbody>
+</table>
+
+<p><strong>Línea base pre-DOJ FY 2008 a FY 2022:</strong> n=302 a lo largo de 15 años, media 20.1 por año.</p>
+
+<h2>Tiempo a disposición: 27% más rápido post-guía</h2>
+
+<p>Para los APs que han alcanzado terminación, el tiempo mediano de presentación a terminación se ha comprimido sustancialmente tras la guía del DOJ. Esta es una comparación dentro del mismo dataset (mismo matcher, misma cobertura, antes y después).</p>
+
+<table>
+<thead>
+<tr><th>Cohorte</th><th class="num">n terminados</th><th class="num">Días mediana</th><th class="num">Días media</th><th class="num">P25-P75</th></tr>
+</thead>
+<tbody>
+<tr><td>Pre-DOJ (presentado antes 2022-11-17)</td><td class="num">338 de 346 (98%)</td><td class="num">305</td><td class="num">395</td><td class="num">142 a 553</td></tr>
+<tr class="surge-row"><td>Post-DOJ (presentado el o después 2022-11-17)</td><td class="num">258 de 1,698 (15%)</td><td class="num">223</td><td class="num">252</td><td class="num">114 a 367</td></tr>
+</tbody>
+</table>
+
+<p>Los APs pre-DOJ están casi todos terminados (son antiguos), mientras que solo el 15% de los post-DOJ ha terminado. El 15% que sí terminó se resuelve más rápido. Esto es consistente con que la guía del DOJ habilita un proceso simplificado de declaración-y-consentimiento en lugar del juicio completo bajo el test Brunner.</p>
+
+<h2>Concentración por administrador: la oleada post-guía es directamente del DOE</h2>
+
+<p>La guía del DOJ aplica a APs de préstamos federales manejados por los Fideicomisarios de los Estados Unidos y el Departamento de Educación (DOE). Los datos muestran exactamente esa concentración: de 1,698 APs post-DOJ en el dataset v2, 1,446 (85%) nombran al U.S. Department of Education en el caso. Pre-DOJ, los APs que nombraban al DOE fueron 155 de 346 (45%). Los APs nombrando al DOE crecieron aproximadamente <strong>9x</strong> post-guía. Los APs contra administradores privados crecieron mucho menos o se mantuvieron planos. Discover Bank de hecho disminuyó.</p>
+
+<h2>Distritos con mayor volumen</h2>
+
+<p>Top 10 de 90 distritos de tribunal de bancarrota que reportan en el dataset v2:</p>
+
+<table>
+<thead>
+<tr><th>Rango</th><th>Distrito</th><th>Court ID</th><th class="num">APs</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Distrito Central de California (Los Ángeles)</td><td><span class="mono">cacb</span></td><td class="num">40</td></tr>
+<tr><td>2</td><td>Distrito Sur de Texas (Houston)</td><td><span class="mono">txsb</span></td><td class="num">36</td></tr>
+<tr><td>3</td><td>Distrito Medio de Florida (Tampa/Orlando)</td><td><span class="mono">flmb</span></td><td class="num">31</td></tr>
+<tr><td>3</td><td>Distrito Oeste de Washington (Seattle)</td><td><span class="mono">wawb</span></td><td class="num">31</td></tr>
+<tr><td>5</td><td>Distrito Norte de Illinois (Chicago)</td><td><span class="mono">ilnb</span></td><td class="num">30</td></tr>
+<tr><td>5</td><td>Distrito de Minnesota</td><td><span class="mono">mnb</span></td><td class="num">30</td></tr>
+<tr><td>5</td><td>Distrito Sur de Nueva York (Manhattan)</td><td><span class="mono">nysb</span></td><td class="num">30</td></tr>
+<tr><td>8</td><td>Distrito Norte de California (San Francisco)</td><td><span class="mono">canb</span></td><td class="num">28</td></tr>
+<tr><td>8</td><td>Distrito de Massachusetts (Boston)</td><td><span class="mono">mab</span></td><td class="num">28</td></tr>
+<tr><td>8</td><td>Distrito de Nueva Jersey</td><td><span class="mono">njb</span></td><td class="num">28</td></tr>
+</tbody>
+</table>
+
+<p>La lista completa de los 90 distritos está en el <a href="data.json">dataset JSON</a>. La distribución relativamente plana refleja la cobertura de RECAP más que la concentración real de presentaciones; los distritos con menor cobertura RECAP estarán subcontados.</p>
+
+<h2>Por qué esto no está ya publicado en un solo lugar</h2>
+
+<p>Una pregunta razonable: "¿No está esto ya publicado en alguna fuente autorizada?" La respuesta honesta es no, no de la manera en que aparece aquí. Las piezas existen, pero ninguna agencia gubernamental ni editorial comercial corre la síntesis como un dataset público gratuito.</p>
+
+<table>
+<thead>
+<tr><th>Fuente</th><th>Qué publica</th><th>La brecha</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Comunicados del DOJ</strong></td><td>Agosto 2023: 632 APs en los primeros 10 meses post-guía. Abril 2024: 1,220 acumulados hasta marzo 2024.</td><td>El DOJ dejó de publicar actualizaciones en abril 2024. Sin desglose por FY, sin detalle de distrito, sin línea base pre-2022, sin análisis de tiempo-a-disposición.</td></tr>
+<tr><td><strong>Federal Judicial Center IDB</strong></td><td>Todas las presentaciones de petición de bancarrota federales 2008 al presente, con capítulo, tipo de deudor, montos, indicador pro-se, totales de descarga.</td><td>El IDB de FJC es solo a nivel de petición. Los procedimientos adversariales no están en el IDB. Verificado contra el dataset FJC (37.9 millones de filas de petición; cero registros adversariales).</td></tr>
+<tr><td><strong>U.S. Trustee / EOUST</strong></td><td>Estadísticas internas de gestión de casos.</td><td>No públicas.</td></tr>
+<tr><td><strong>Departamento de Educación / FSA</strong></td><td>Estado del portafolio de préstamos, tasas de incumplimiento, métricas de pago.</td><td>No publica datos del lado del litigio.</td></tr>
+<tr><td><strong>AACER / Epiq</strong> (comercial)</td><td>Base de datos comprehensiva de bancarrota incluyendo APs.</td><td>Comercial, niveles pagados. No publican panel público gratuito.</td></tr>
+<tr><td><strong>NCLC, ABI, académicos</strong></td><td>Análisis legales periódicos y estudios académicos citando cifras del DOJ.</td><td>Citan al DOJ como autoridad. No corren conteos independientes.</td></tr>
+<tr><td><strong>CourtListener / RECAP</strong> (Free Law Project)</td><td>Espejo público de documentos PACER de tribunales federales, incluyendo APs de bancarrota.</td><td>Los expedientes subyacentes están ahí, pero no etiquetados por estatuto. Contar requiere consultas y metodología personalizadas.</td></tr>
+</tbody>
+</table>
+
+<p>Esta página es OBP aplicando la metodología faltante a la única fuente pública gratuita que tiene los datos subyacentes (RECAP), anclando los conteos absolutos a las cifras del propio DOJ. La línea base pre-2022 y la trayectoria post-marzo-2024 no están disponibles desde ninguna otra fuente pública que hayamos encontrado.</p>
+
+<h2 id="metodologia">Metodología</h2>
+
+<h3>De dónde viene cada número</h3>
+<ol>
+<li><strong>Todos los conteos § 523(a)(8) (las demandas reales).</strong> RECAP / CourtListener, para la ventana completa 2008 a 27 abril 2026. Tanto los conteos pre-guía como post-guía vienen de la misma fuente con el mismo matcher. El IDB de FJC no contiene APs; RECAP es la única fuente nacional gratuita.</li>
+<li><strong>Anclas de conteo absoluto (632 / 1,220).</strong> Comunicados del DOJ, agosto 2023 y abril 2024. Únicos conteos absolutos autorizados publicados, y solo para dos ventanas acumulativas específicas.</li>
+<li><strong>Contexto macro (8.4 millones de bancarrotas).</strong> FJC IDB, archivos de petición de bancarrota. Para contexto general, no para conteos específicos de AP.</li>
+</ol>
+
+<h3>Por qué los conteos de OBP difieren de los del DOJ</h3>
+<p>El DOJ ha reportado 632 APs en los primeros 10 meses post-guía y 1,220 acumulados hasta marzo 2024. Los conteos de OBP derivados de RECAP para la misma ventana son aproximadamente 15% a 25% de esas cifras. La brecha existe por tres razones documentadas:</p>
+<ul>
+<li><strong>RECAP no contiene todos los APs.</strong> El archivo del Free Law Project depende de cargas de usuarios, herramientas de observadores y scraping continuo. APs en PACER pero nunca espejados a RECAP están silenciosamente ausentes.</li>
+<li><strong>Captiones por administrador y federales pierden algunos APs.</strong> El matcher requiere que el caso nombre un administrador conocido o incluya "United States" con un término de préstamo estudiantil.</li>
+<li><strong>Presentaciones recientes tienen retraso de indexación.</strong> RECAP recibe datos de PACER de forma continua. Las presentaciones de los últimos meses están sistemáticamente subcontadas.</li>
+</ul>
+<p>Estas brechas significan que los números absolutos de OBP son <strong>estimaciones piso</strong>. Los hallazgos direccionales son robustos porque sobreviven la brecha en ambos lados de la comparación.</p>
+
+<h3>Fuentes de datos</h3>
+<ul>
+<li><strong>Conteos absolutos (632 / 1,220):</strong> comunicados del DOJ, <a href="https://www.justice.gov/archives/opa/pr/justice-department-and-department-education-announce-successful-first-year-new-student-loan" rel="noopener">agosto 2023</a> y <a href="https://www.justice.gov/archives/opa/pr/justice-department-and-department-education-announce-continuing-success-student-loan" rel="noopener">abril 2024</a>.</li>
+<li><strong>Forma de año fiscal, distritos, tiempo-a-disposición, concentración por administrador:</strong> dataset OBP § 523(a)(8) derivado de RECAP (matcher v2), n=2,045 APs fechados del archivo de <a href="https://www.courtlistener.com/" rel="noopener">CourtListener</a> / RECAP.</li>
+<li><strong>Contexto macro:</strong> Federal Judicial Center IDB, archivos de petición de bancarrota.</li>
+<li><strong>Guía subyacente:</strong> <a href="https://www.justice.gov/d9/pages/attachments/2022/11/17/student_loan_discharge_guidance_-_guidance_text_0.pdf" rel="noopener">texto de la guía del DOJ del 17 noviembre 2022</a>; explicador del <a href="https://library.nclc.org/article/new-process-discharge-student-loans-bankruptcy" rel="noopener">National Consumer Law Center</a>.</li>
+</ul>
+
+<h3>Caveats</h3>
+<div class="note">
+<p><strong>Retraso de RECAP y cobertura.</strong> La cobertura de RECAP de procedimientos adversariales antiguos es incompleta y desigual entre distritos y años. Conteos pre-2018 son estimaciones piso.</p>
+</div>
+<div class="note">
+<p><strong>Presentaciones, no resultados de descarga.</strong> El dataset cuenta APs presentados, no APs que resultan en descarga real de deuda estudiantil. Aproximadamente la mitad de los APs presentados se acuerdan o se desestiman antes del juicio.</p>
+</div>
+<div class="note">
+<p><strong>Federal vs administradores privados.</strong> La guía del DOJ aplica a APs de préstamos federales manejados por los Fideicomisarios de los EE.UU. y el DOE. Los APs contra administradores privados siguen rutas procedimentales diferentes.</p>
+</div>
+<div class="note">
+<p><strong>Comparación pre-2022.</strong> El DOJ no publica conteos de APs § 523(a)(8) para la era pre-2022. La línea base de "20 por año" es la estimación piso de OBP derivada de RECAP para FY 2008 a FY 2022.</p>
+</div>
+
+<h2>Para profundizar</h2>
+<p>Esta página es un resumen en español. Para detalle completo (los 25 distritos top, tabla completa de administradores, lista completa de fuentes y enlaces directos a docket-level), consulte la <a href="/research/523a8-discharge-trends/">versión completa en inglés</a> y descargue el <a href="data.json">dataset JSON</a>.</p>
+
+</main>
+
+<footer>
+<div>
+<a href="/">Inicio</a> ·
+<a href="/research/523a8-discharge-trends/">English</a> ·
+<a href="https://openbankruptcyproject.org">Open Bankruptcy Project</a>
+</div>
+<div style="margin-top:12px">Datos bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · 501(c)(3) sin fines de lucro · EIN 41-5159631</div>
+</footer>
+
+</div>
+</body>
+</html>

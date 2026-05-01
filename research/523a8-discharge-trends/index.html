@@ -195,6 +195,8 @@ table td { color: var(--text-secondary); }
 table td.num { text-align: right; font-variant-numeric: tabular-nums; color: var(--text); font-weight: 500; }
 table tr.surge-row td { color: var(--text); font-weight: 600; }
 table tr.surge-row td.num { color: var(--green); }
+table.servicer-table td.num a { color: inherit; text-decoration: none; border-bottom: 1px dotted rgba(139, 148, 158, 0.45); }
+table.servicer-table td.num a:hover { border-bottom-color: currentColor; border-bottom-style: solid; }
 table tr.cutoff-row td { border-top: 2px solid rgba(210, 153, 34, 0.5); }
 
 .note {
@@ -473,24 +475,24 @@ footer a:hover { color: var(--text); }
 
     <p>The Justice Department guidance applies to federal-loan APs handled by U.S. Trustees and the Department of Education. The data shows exactly that concentration: of 1,698 post-DOJ APs in the v2 dataset, 1,446 (85 percent) name the U.S. Department of Education in the caption. Pre-DOJ DOE-named APs were 155 of 346 (45 percent). DOE-named APs grew roughly 9x post-guidance. Private-servicer APs grew much less or stayed flat. Discover Bank actually decreased.</p>
 
-    <table>
+    <table class="servicer-table">
       <thead>
         <tr><th>Defendant servicer or agency</th><th class="num">Pre-DOJ APs</th><th class="num">Post-DOJ APs</th><th class="num">Total</th><th>Direction</th></tr>
       </thead>
       <tbody>
-        <tr class="surge-row"><td>U.S. Department of Education</td><td class="num">155</td><td class="num">1,446</td><td class="num">1,602</td><td>+833% (the surge)</td></tr>
-        <tr><td>NELNET</td><td class="num">5</td><td class="num">59</td><td class="num">64</td><td>+1,080%</td></tr>
-        <tr><td>Navient</td><td class="num">12</td><td class="num">46</td><td class="num">58</td><td>+283%</td></tr>
-        <tr><td>Sallie Mae / SLM Corp</td><td class="num">20</td><td class="num">35</td><td class="num">55</td><td>+75%</td></tr>
-        <tr><td>ECMC / Educational Credit Management</td><td class="num">21</td><td class="num">21</td><td class="num">42</td><td>flat</td></tr>
-        <tr><td>Mohela</td><td class="num">0</td><td class="num">37</td><td class="num">37</td><td>new (post-2022 only)</td></tr>
-        <tr><td>"v. United States" (no agency in caption)</td><td class="num">18</td><td class="num">14</td><td class="num">32</td><td>declined</td></tr>
-        <tr><td>Citizens Bank</td><td class="num">14</td><td class="num">15</td><td class="num">29</td><td>flat</td></tr>
-        <tr><td>Aidvantage</td><td class="num">1</td><td class="num">27</td><td class="num">28</td><td>new (post-2022)</td></tr>
-        <tr><td>Discover Bank / Discover Student Loans</td><td class="num">68</td><td class="num">14</td><td class="num">82</td><td><strong>declined</strong></td></tr>
-        <tr><td>AES / American Education Services</td><td class="num">6</td><td class="num">5</td><td class="num">11</td><td>flat</td></tr>
-        <tr><td>Edfinancial</td><td class="num">0</td><td class="num">10</td><td class="num">10</td><td>new (post-2022)</td></tr>
-        <tr><td>Pennsylvania Higher Education / PHEAA</td><td class="num">3</td><td class="num">4</td><td class="num">7</td><td>flat</td></tr>
+        <tr class="surge-row"><td>U.S. Department of Education</td><td class="num"><a href="by-servicer/doe.html?filter=pre" title="View pre-DOJ DOE-named cases">155</a></td><td class="num"><a href="by-servicer/doe.html?filter=post" title="View post-DOJ DOE-named cases">1,446</a></td><td class="num"><a href="by-servicer/doe.html" title="View all DOE-named cases">1,602</a></td><td>+833% (the surge)</td></tr>
+        <tr><td>NELNET</td><td class="num"><a href="by-servicer/nelnet.html?filter=pre">5</a></td><td class="num"><a href="by-servicer/nelnet.html?filter=post">59</a></td><td class="num"><a href="by-servicer/nelnet.html">64</a></td><td>+1,080%</td></tr>
+        <tr><td>Navient</td><td class="num"><a href="by-servicer/navient.html?filter=pre">12</a></td><td class="num"><a href="by-servicer/navient.html?filter=post">46</a></td><td class="num"><a href="by-servicer/navient.html">58</a></td><td>+283%</td></tr>
+        <tr><td>Sallie Mae / SLM Corp</td><td class="num"><a href="by-servicer/sallie-mae.html?filter=pre">20</a></td><td class="num"><a href="by-servicer/sallie-mae.html?filter=post">35</a></td><td class="num"><a href="by-servicer/sallie-mae.html">55</a></td><td>+75%</td></tr>
+        <tr><td>ECMC / Educational Credit Management</td><td class="num"><a href="by-servicer/ecmc.html?filter=pre">21</a></td><td class="num"><a href="by-servicer/ecmc.html?filter=post">21</a></td><td class="num"><a href="by-servicer/ecmc.html">42</a></td><td>flat</td></tr>
+        <tr><td>Mohela</td><td class="num">0</td><td class="num"><a href="by-servicer/mohela.html?filter=post">37</a></td><td class="num"><a href="by-servicer/mohela.html">37</a></td><td>new (post-2022 only)</td></tr>
+        <tr><td>"v. United States" (no agency in caption)</td><td class="num"><a href="by-servicer/us.html?filter=pre">18</a></td><td class="num"><a href="by-servicer/us.html?filter=post">14</a></td><td class="num"><a href="by-servicer/us.html">32</a></td><td>declined</td></tr>
+        <tr><td>Citizens Bank</td><td class="num"><a href="by-servicer/citizens.html?filter=pre">14</a></td><td class="num"><a href="by-servicer/citizens.html?filter=post">15</a></td><td class="num"><a href="by-servicer/citizens.html">29</a></td><td>flat</td></tr>
+        <tr><td>Aidvantage</td><td class="num"><a href="by-servicer/aidvantage.html?filter=pre">1</a></td><td class="num"><a href="by-servicer/aidvantage.html?filter=post">27</a></td><td class="num"><a href="by-servicer/aidvantage.html">28</a></td><td>new (post-2022)</td></tr>
+        <tr><td>Discover Bank / Discover Student Loans</td><td class="num"><a href="by-servicer/discover.html?filter=pre">68</a></td><td class="num"><a href="by-servicer/discover.html?filter=post">14</a></td><td class="num"><a href="by-servicer/discover.html">82</a></td><td><strong>declined</strong></td></tr>
+        <tr><td>AES / American Education Services</td><td class="num"><a href="by-servicer/aes.html?filter=pre">6</a></td><td class="num"><a href="by-servicer/aes.html?filter=post">5</a></td><td class="num"><a href="by-servicer/aes.html">11</a></td><td>flat</td></tr>
+        <tr><td>Edfinancial</td><td class="num">0</td><td class="num"><a href="by-servicer/edfinancial.html?filter=post">10</a></td><td class="num"><a href="by-servicer/edfinancial.html">10</a></td><td>new (post-2022)</td></tr>
+        <tr><td>Pennsylvania Higher Education / PHEAA</td><td class="num"><a href="by-servicer/pheaa.html?filter=pre">3</a></td><td class="num"><a href="by-servicer/pheaa.html?filter=post">4</a></td><td class="num"><a href="by-servicer/pheaa.html">7</a></td><td>flat</td></tr>
       </tbody>
     </table>
 

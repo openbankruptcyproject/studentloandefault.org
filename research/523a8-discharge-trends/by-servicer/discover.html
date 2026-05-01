@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover Bank / Discover Student Loans | Open Bankruptcy Project</title>
+<meta name="robots" content="noindex,follow">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --text-secondary: #8b949e;
+  --accent: #d29922; --green: #3fb950;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; line-height: 1.55; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 30px 24px 80px; }
+header.site { border-bottom: 1px solid var(--border); padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
+header.site a { color: var(--text); text-decoration: none; }
+header.site nav a { color: var(--text-secondary); margin-left: 18px; font-size: 0.9rem; }
+h1 { font-size: 1.8rem; margin: 0 0 4px; }
+.crumb { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 18px; }
+.crumb a { color: var(--accent); text-decoration: none; }
+.crumb a:hover { text-decoration: underline; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 22px 0 28px; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.stat .label { font-size: 0.78rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.04em; }
+.stat .num { font-size: 1.6rem; font-weight: 800; color: var(--text); margin-top: 4px; }
+.stat.active { border-color: var(--accent); }
+.filter-bar { margin: 18px 0; font-size: 0.92rem; color: var(--text-secondary); }
+.filter-bar a { color: var(--accent); text-decoration: none; padding: 4px 10px; border-radius: 4px; border: 1px solid transparent; }
+.filter-bar a.active { border-color: var(--accent); }
+.filter-bar a:hover { text-decoration: underline; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.92rem; }
+table th, table td { padding: 8px 12px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+table th { color: var(--text-secondary); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.04em; text-transform: uppercase; background: var(--surface); }
+table td.case { color: var(--text); }
+table td.court { font-family: ui-monospace, "SF Mono", Menlo, monospace; color: var(--text-secondary); font-size: 0.85rem; }
+table td.date { font-variant-numeric: tabular-nums; color: var(--text-secondary); white-space: nowrap; }
+table td.flag { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-secondary); }
+table td.flag.pre { color: var(--text-secondary); }
+table td.flag.post { color: var(--green); }
+table tr.row-pre { }
+table tr.row-post { }
+table a { color: var(--accent); text-decoration: none; border-bottom: 1px dotted rgba(210, 153, 34, 0.5); }
+table a:hover { border-bottom-color: var(--accent); border-bottom-style: solid; }
+.regex-block { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; margin: 14px 0; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 0.85rem; color: var(--text-secondary); white-space: pre-wrap; word-break: break-all; }
+footer.note { margin-top: 40px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--text-secondary); font-size: 0.88rem; }
+footer.note a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header class="site">
+  <a href="/"><strong>studentloandefault.org</strong></a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="../">523(a)(8) trends</a>
+  </nav>
+</header>
+<div class="wrap">
+  <p class="crumb"><a href="../">&larr; Back to 523(a)(8) discharge trends</a></p>
+  <h1>Discover Bank / Discover Student Loans</h1>
+  <p class="meta" style="color: var(--text-secondary); font-size: 0.92rem;">Adversary proceedings under 11 U.S.C. § 523(a)(8) where the case caption matches this servicer or agency. Source: CourtListener / RECAP archive (Free Law Project), v2 broader matcher snapshot 2026-04-28.</p>
+
+  <div class="stats">
+    <div class="stat" id="stat-total"><div class="label">Total APs</div><div class="num">82</div></div>
+    <div class="stat" id="stat-pre"><div class="label">Pre-DOJ guidance</div><div class="num">68</div></div>
+    <div class="stat" id="stat-post"><div class="label">Post-DOJ guidance</div><div class="num">14</div></div>
+  </div>
+
+  <p class="filter-bar">Filter:
+    <a href="?filter=all" id="f-all">All</a>
+    <a href="?filter=pre" id="f-pre">Pre-DOJ (68)</a>
+    <a href="?filter=post" id="f-post">Post-DOJ (14)</a>
+  </p>
+
+  <table id="cases">
+    <thead>
+      <tr><th>Case name</th><th>Court</th><th>Filed</th><th>Terminated</th><th>Era</th></tr>
+    </thead>
+    <tbody>
+      <tr class="row-post"><td class="case">Pringle v. Discover Bank/Capital One, N.A.</td><td class="court">wvnb</td><td class="date">2026-04-15</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Wissel v. Discover Bank</td><td class="court">insb</td><td class="date">2025-12-06</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Welch v. Discover Bank, merged into Capital One, National A</td><td class="court">vawb</td><td class="date">2025-11-12</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Freeland v. Discover Bank</td><td class="court">innb</td><td class="date">2025-10-21</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Stauffer v. Discover Bank</td><td class="court">pawb</td><td class="date">2025-07-01</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Bogard v. Discover Bank</td><td class="court">areb</td><td class="date">2025-04-21</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Khemmanivanh v. Discover Student Loans</td><td class="court">alsb</td><td class="date">2025-04-15</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Kurtz v. Discover Bank</td><td class="court">idb</td><td class="date">2025-04-14</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Pastor v. Discover Bank</td><td class="court">pawb</td><td class="date">2025-04-07</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Richardson v. Discover Bank</td><td class="court">ilcb</td><td class="date">2025-01-21</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Rivera-Fulton v. Discover Bank</td><td class="court">laeb</td><td class="date">2024-09-17</td><td class="date">—</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Baxley v. Discover Bank</td><td class="court">moeb</td><td class="date">2023-12-06</td><td class="date">2024-05-14</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Delehanty v. Discover Student Loans</td><td class="court">mtb</td><td class="date">2023-07-03</td><td class="date">2025-03-07</td><td class="flag post">post</td></tr>
+      <tr class="row-post"><td class="case">Abide v. Discover Bank Products Inc</td><td class="court">lamb</td><td class="date">2023-04-19</td><td class="date">2023-07-03</td><td class="flag post">post</td></tr>
+      <tr class="row-pre"><td class="case">Robles v. Discover Bank</td><td class="court">arwb</td><td class="date">2022-11-14</td><td class="date">2023-07-06</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Horwitz v. Discover Bank</td><td class="court">nywb</td><td class="date">2022-05-31</td><td class="date">2022-08-15</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Burkes v. Discover Bank</td><td class="court">arwb</td><td class="date">2022-03-31</td><td class="date">2022-05-16</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Eggmann v. Discover Bank</td><td class="court">ilsb</td><td class="date">2022-03-29</td><td class="date">2022-05-20</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Heck v. Discover Bank</td><td class="court">ilsb</td><td class="date">2021-06-15</td><td class="date">2021-08-25</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Daigle v. Discover Student Loans</td><td class="court">meb</td><td class="date">2021-05-13</td><td class="date">2022-08-26</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Tondreau v. Discover Bank</td><td class="court">nhb</td><td class="date">2020-01-08</td><td class="date">2020-04-10</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Sallier, Jr.</td><td class="court">lawb</td><td class="date">2019-10-30</td><td class="date">2020-01-17</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Bringle v. Discover Bank d/b/a Discover Personal Loans</td><td class="court">ncmb</td><td class="date">2019-08-30</td><td class="date">2019-12-13</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Sheehan v. Discover Bank</td><td class="court">wvnb</td><td class="date">2019-06-09</td><td class="date">2019-08-22</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Lane</td><td class="court">msnb</td><td class="date">2019-05-06</td><td class="date">2019-12-30</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Lawrence, Jr.</td><td class="court">ncmb</td><td class="date">2019-05-03</td><td class="date">2019-12-13</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Edge v. Discover Bank</td><td class="court">wvnb</td><td class="date">2019-01-03</td><td class="date">2019-07-10</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Webb</td><td class="court">lawb</td><td class="date">2017-06-23</td><td class="date">2017-12-04</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Soori-Arachi v. Discover Student Loans</td><td class="court">rib</td><td class="date">2017-04-18</td><td class="date">2017-09-19</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Doeling v. Discover Bank</td><td class="court">ndb</td><td class="date">2017-03-30</td><td class="date">2017-08-17</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Taylor</td><td class="court">hib</td><td class="date">2015-07-20</td><td class="date">2016-11-08</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Scott D. Morris v. Discover Bank</td><td class="court">vtb</td><td class="date">2015-05-06</td><td class="date">2015-08-14</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Young v. Discover Bank</td><td class="court">lawb</td><td class="date">2014-04-02</td><td class="date">2014-06-04</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Russell v. Discover Bank</td><td class="court">wvnb</td><td class="date">2014-03-20</td><td class="date">2016-05-31</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Salehi</td><td class="court">lawb</td><td class="date">2013-12-19</td><td class="date">2014-06-25</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Viphakone</td><td class="court">rib</td><td class="date">2013-10-18</td><td class="date">2014-01-29</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Stoneking, Jr. v. Discover Bank</td><td class="court">wvnb</td><td class="date">2012-11-07</td><td class="date">2013-02-15</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Heid v. Discover Bank</td><td class="court">ndb</td><td class="date">2012-06-28</td><td class="date">2012-10-11</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Inman</td><td class="court">akb</td><td class="date">2012-05-14</td><td class="date">2012-06-27</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Phillips</td><td class="court">hib</td><td class="date">2012-03-12</td><td class="date">2012-07-02</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Green</td><td class="court">wyb</td><td class="date">2012-01-26</td><td class="date">2012-05-16</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Jones</td><td class="court">lamb</td><td class="date">2011-12-01</td><td class="date">2012-02-06</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Schultz v. Discover Bank</td><td class="court">sdb</td><td class="date">2011-08-03</td><td class="date">2011-10-06</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Wirkus v. Discover Bank</td><td class="court">sdb</td><td class="date">2011-07-14</td><td class="date">2011-10-04</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Papka v. Discover Bank</td><td class="court">sdb</td><td class="date">2011-07-08</td><td class="date">2011-09-16</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Kelly</td><td class="court">sdb</td><td class="date">2011-06-27</td><td class="date">2011-10-25</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Schoen</td><td class="court">sdb</td><td class="date">2011-06-20</td><td class="date">2011-07-11</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Rabenberg</td><td class="court">sdb</td><td class="date">2011-06-15</td><td class="date">2011-07-11</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Henry</td><td class="court">sdb</td><td class="date">2011-05-15</td><td class="date">2011-12-30</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Scondras v. Discover Bank</td><td class="court">hib</td><td class="date">2011-05-09</td><td class="date">2011-06-06</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Ewen</td><td class="court">wyb</td><td class="date">2011-02-25</td><td class="date">2011-09-14</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Krueger</td><td class="court">sdb</td><td class="date">2010-12-23</td><td class="date">2011-06-02</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Wettels</td><td class="court">ndb</td><td class="date">2010-11-29</td><td class="date">2010-12-28</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Boettcher v. Discover Bank</td><td class="court">sdb</td><td class="date">2010-11-19</td><td class="date">2011-01-25</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Gerlock</td><td class="court">wyb</td><td class="date">2010-11-05</td><td class="date">2012-02-14</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Callahan</td><td class="court">wyb</td><td class="date">2010-10-04</td><td class="date">2010-11-12</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. McGrath</td><td class="court">dcb</td><td class="date">2010-08-17</td><td class="date">2011-03-09</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Mick v. Discover Bank</td><td class="court">sdb</td><td class="date">2010-07-21</td><td class="date">2010-09-27</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Palmer</td><td class="court">lamb</td><td class="date">2010-06-04</td><td class="date">2010-07-16</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Polotzola</td><td class="court">lamb</td><td class="date">2009-06-10</td><td class="date">2009-07-21</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Warren</td><td class="court">lamb</td><td class="date">2009-05-27</td><td class="date">2009-06-08</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Ekman</td><td class="court">akb</td><td class="date">2009-02-06</td><td class="date">2009-03-18</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Traylor</td><td class="court">sdb</td><td class="date">2008-11-05</td><td class="date">2008-12-02</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issurer of the Discover Card v. Green</td><td class="court">ndb</td><td class="date">2008-08-29</td><td class="date">2008-11-25</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Jones</td><td class="court">lamb</td><td class="date">2008-05-22</td><td class="date">2008-09-10</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Schwing</td><td class="court">ndb</td><td class="date">2008-02-08</td><td class="date">2008-04-14</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. DeBella</td><td class="court">wyb</td><td class="date">2008-02-08</td><td class="date">2008-04-15</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Huynh</td><td class="court">ndb</td><td class="date">2007-12-03</td><td class="date">2008-09-15</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Laramee</td><td class="court">dcb</td><td class="date">2007-11-07</td><td class="date">2008-01-16</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Dobre</td><td class="court">ndb</td><td class="date">2007-09-14</td><td class="date">2007-12-27</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Strand</td><td class="court">ndb</td><td class="date">2006-09-06</td><td class="date">2007-03-21</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Walton</td><td class="court">lamb</td><td class="date">2006-05-10</td><td class="date">2006-10-13</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Crawford</td><td class="court">lamb</td><td class="date">2006-03-24</td><td class="date">2006-05-01</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Neumiller v. Discover Bank</td><td class="court">sdb</td><td class="date">2006-03-06</td><td class="date">2006-04-25</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Nelin v. Discover Bank</td><td class="court">sdb</td><td class="date">2006-01-24</td><td class="date">2006-03-09</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">DISCOVER BANK v. MARTINEZ LEBRON</td><td class="court">prb</td><td class="date">2006-01-13</td><td class="date">2006-09-20</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Gukasova</td><td class="court">sdb</td><td class="date">2006-01-03</td><td class="date">2006-02-09</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank v. Simonsmeier</td><td class="court">sdb</td><td class="date">2005-12-09</td><td class="date">2006-01-30</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Matroodnejad</td><td class="court">lamb</td><td class="date">2005-08-15</td><td class="date">2006-01-11</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Williams</td><td class="court">lamb</td><td class="date">2005-07-11</td><td class="date">2006-02-10</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. Watts</td><td class="court">lamb</td><td class="date">2005-05-27</td><td class="date">2005-07-20</td><td class="flag pre">pre</td></tr>
+      <tr class="row-pre"><td class="case">Discover Bank, Issuer of the Discover Card v. El-Zahr</td><td class="court">lamb</td><td class="date">2005-05-13</td><td class="date">2005-06-20</td><td class="flag pre">pre</td></tr>
+    </tbody>
+  </table>
+
+  <h2 style="margin-top: 36px; font-size: 1.15rem;">How this servicer is matched</h2>
+  <p style="color: var(--text-secondary); font-size: 0.92rem;">A row is included when the AP's <code>caseName</code> matches one of these case-insensitive patterns:</p>
+  <div class="regex-block">\bdiscover\s+(?:bank|student loans|card)\b</div>
+  <p style="color: var(--text-secondary); font-size: 0.88rem;">An AP can match more than one servicer (multi-defendant captions), so totals across servicers exceed the dataset's 2,045 records. The DOJ-guidance cutoff is November 17, 2022.</p>
+
+  <footer class="note">
+    Methodology and limitations: <a href="../#methodology">523(a)(8) trends · Methodology</a> ·
+    Raw dataset: <a href="../data.json">data.json</a> ·
+    Free public source: <a href="https://www.courtlistener.com/" rel="noopener">CourtListener</a>
+  </footer>
+</div>
+<script>
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var filter = params.get('filter') || 'all';
+  var rows = document.querySelectorAll('#cases tbody tr');
+  rows.forEach(function(r) {
+    if (filter === 'all') { r.style.display = ''; return; }
+    if (filter === 'pre' && r.classList.contains('row-pre')) { r.style.display = ''; return; }
+    if (filter === 'post' && r.classList.contains('row-post')) { r.style.display = ''; return; }
+    r.style.display = 'none';
+  });
+  var ids = {all: 'f-all', pre: 'f-pre', post: 'f-post'};
+  var statIds = {all: 'stat-total', pre: 'stat-pre', post: 'stat-post'};
+  Object.keys(ids).forEach(function(k) {
+    var el = document.getElementById(ids[k]);
+    if (el && k === filter) el.classList.add('active');
+    var s = document.getElementById(statIds[k]);
+    if (s && k === filter) s.classList.add('active');
+  });
+})();
+</script>
+</body>
+</html>
