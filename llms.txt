@@ -1,23 +1,76 @@
-# Student Loan Default - Consequences & Solutions [2026]
-> Last updated: 2026-05-01
+# Student Loan Default - Consequences &amp; Solutions [2026]
+> Last updated: 2026-09-25
 
-> What happens when you default on student loans? Garnishment, tax offsets, credit damage, and how to get out of default. 2026 guide.
+> Student loan default and defaulted student loans: what happens when you default on student loans, default loan payment consequences
 
 ## About
 studentloandefault.org is part of the Open Bankruptcy Project (openbankruptcyproject.org), a 501(c)(3) nonprofit building free, open-source tools for bankruptcy court transparency.
 
 ## Key Pages
-- Consolidation After Student Loan Default - Fast Exit From Default: https://studentloandefault.org/consolidation-after-default.html
-- Credit Impact of Student Loan Default - How Bad Is It?: https://studentloandefault.org/credit-impact-default.html
-- Student Loan Default Timeline - What Happens Month by Month: https://studentloandefault.org/default-timeline.html
+- Consolidation After Student Loan Default [2026]: Fast Exit Under 34 CFR 685.220: https://studentloandefault.org/consolidation-after-default.html
+- Credit Impact of Student Loan Default [2026]: 7-Year FCRA Reporting Tail and Score Drop: https://studentloandefault.org/credit-impact-default.html
+- Student Loan Default Timeline [2026]: From Day 1 Missed Payment to Treasury Offset: https://studentloandefault.org/default-timeline.html
 - Getting Out of Student Loan Default - All Your Options: https://studentloandefault.org/getting-out-of-default.html
-- Student Loan Default - Consequences & Solutions: https://studentloandefault.org/
-- Private Student Loan Default - Different Rules, Different Risks: https://studentloandefault.org/private-loan-default.html
-- Student Loan Rehabilitation - Remove Default From Your Credit Report: https://studentloandefault.org/rehabilitation.html
+- Student Loan Default - Consequences &amp; Solutions: https://studentloandefault.org/
+- Private Student Loan Default [2026]: Different Rules, State Statute of Limitations, FDCPA Rights: https://studentloandefault.org/private-loan-default.html
+- Student Loan Rehabilitation [2026]: 9 On-Time Payments Under 34 CFR 685.211 Removes Default: https://studentloandefault.org/rehabilitation.html
 - Student Loan Social Security Offset - Protecting Benefits From Seizure: https://studentloandefault.org/social-security-offset.html
-- Student Loan Tax Refund Offset - When the IRS Takes Your Refund: https://studentloandefault.org/tax-refund-offset.html
+- Student Loan Tax Refund Offset [2026]: 31 USC 3716 Treasury Intercept of Federal Refunds: https://studentloandefault.org/tax-refund-offset.html
 - Student Loan Wage Garnishment - How Much They Can Take and How to Stop It: https://studentloandefault.org/wage-garnishment.html
 - Privacy Policy: https://studentloandefault.org/privacy.html
+- About studentloandefault.org: https://studentloandefault.org/about.html
+- Student Loan Default in Alabama [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/alabama.html
+- Student Loan Default in Alaska [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/alaska.html
+- Student Loan Default in Arizona [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/arizona.html
+- Student Loan Default in Arkansas [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/arkansas.html
+- Student Loan Default in California [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/california.html
+- Student Loan Default in Colorado [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/colorado.html
+- Student Loan Default in Connecticut [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/connecticut.html
+- Student Loan Default in Delaware [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/delaware.html
+- Student Loan Default in District of Columbia [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/district-of-columbia.html
+- Student Loan Default in Florida [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/florida.html
+- Student Loan Default in Georgia [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/georgia.html
+- Student Loan Default in Hawaii [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/hawaii.html
+- Student Loan Default in Idaho [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/idaho.html
+- Student Loan Default in Illinois [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/illinois.html
+- Student Loan Default by State by State: https://studentloandefault.org/states/
+- Student Loan Default in Indiana [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/indiana.html
+- Student Loan Default in Iowa [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/iowa.html
+- Student Loan Default in Kansas [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/kansas.html
+- Student Loan Default in Kentucky [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/kentucky.html
+- Student Loan Default in Louisiana [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/louisiana.html
+- Student Loan Default in Maine [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/maine.html
+- Student Loan Default in Maryland [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/maryland.html
+- Student Loan Default in Massachusetts [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/massachusetts.html
+- Student Loan Default in Michigan [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/michigan.html
+- Student Loan Default in Minnesota [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/minnesota.html
+- Student Loan Default in Mississippi [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/mississippi.html
+- Student Loan Default in Missouri [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/missouri.html
+- Student Loan Default in Montana [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/montana.html
+- Student Loan Default in Nebraska [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/nebraska.html
+- Student Loan Default in Nevada [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/nevada.html
+- Student Loan Default in New Hampshire [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/new-hampshire.html
+- Student Loan Default in New Jersey [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/new-jersey.html
+- Student Loan Default in New Mexico [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/new-mexico.html
+- Student Loan Default in New York [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/new-york.html
+- Student Loan Default in North Carolina [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/north-carolina.html
+- Student Loan Default in North Dakota [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/north-dakota.html
+- Student Loan Default in Ohio [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/ohio.html
+- Student Loan Default in Oklahoma [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/oklahoma.html
+- Student Loan Default in Oregon [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/oregon.html
+- Student Loan Default in Pennsylvania [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/pennsylvania.html
+- Student Loan Default in Rhode Island [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/rhode-island.html
+- Student Loan Default in South Carolina [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/south-carolina.html
+- Student Loan Default in South Dakota [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/south-dakota.html
+- Student Loan Default in Tennessee [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/tennessee.html
+- Student Loan Default in Texas [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/texas.html
+- Student Loan Default in Utah [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/utah.html
+- Student Loan Default in Vermont [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/vermont.html
+- Student Loan Default in Virginia [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/virginia.html
+- Student Loan Default in Washington [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/washington.html
+- Student Loan Default in West Virginia [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/west-virginia.html
+- Student Loan Default in Wisconsin [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/wisconsin.html
+- Student Loan Default in Wyoming [2026]: Garnishment, Offset, Licensing: https://studentloandefault.org/states/wyoming.html
 
 ## Contact
 - Website: https://openbankruptcyproject.org
