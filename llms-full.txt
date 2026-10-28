@@ -1,6 +1,6 @@
 # studentloandefault.org -- Full Content
 
-> Last updated: 2026-09-25
+> Last updated: 2026-10-28
 
 This file contains the full text content of all pages on studentloandefault.org.
 Part of the Open Bankruptcy Project (openbankruptcyproject.org).
@@ -33,7 +33,7 @@ Many borrowers choose based on urgency: if garnishment is devastating your finan
 
 After Consolidation
 
-Once consolidation is complete: 1. Confirm enrollment in your chosen IDR plan. 2. Set up autopay to prevent future default. 3. If you work for a PSLF-qualifying employer, submit the Employment Certification Form. 4. Begin your forgiveness clock - payments on the new consolidation loan count toward IDR forgiveness from the consolidation date.
+Once consolidation is complete: 1. Confirm enrollment in your chosen IDR plan. 2. Set up autopay to prevent future default. 3. If you work for a PSLF-qualifying employer, submit the PSLF form through the PSLF Help Tool at StudentAid.gov/pslf. 4. Begin your forgiveness clock - payments on the new consolidation loan count toward IDR forgiveness from the consolidation date.
 
 Note: consolidation resets your IDR forgiveness clock. Pre-consolidation payments on the defaulted loans don't count toward the 20-25 year forgiveness period on the new consolidation loan. The IDR Account Adjustment may have credited some historical time, but going forward, the clock starts fresh.
 
